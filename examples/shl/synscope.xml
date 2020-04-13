@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Main Source="&lt;video;timelapse.avi&gt;&lt;signal;data_synscope.txt&gt;&#10;" View="&lt;scope;0;Acceleration Hand;1 2 3;yscale=-25000 25000;color=ff0000 00ff00 0000ff&gt;&#10;&lt;scope;0;Acceleration Bag;4 5 6;yscale=-25000 25000;color=ff0000 00ff00 0000ff&gt;&#10;&lt;scope;0;Acceleration Hip;7 8 9;yscale=-25000 25000;color=ff0000 00ff00 0000ff&gt;&#10;&lt;scope;0;Acceleration Torso;10 11 12;yscale=-25000 25000;color=ff0000 00ff00 0000ff&gt;&#10;&lt;label;0;Label tracks;13;title=Main&gt;&#10;"/>
+    <References>
+        <ReferenceData source1="1" position1="50608" source2="0" position2="0"/>
+        <ReferenceData source1="1" position1="50623" source2="0" position2="10"/>
+    </References>
+</Configuration>
