@@ -1,0 +1,371 @@
+\hypertarget{data_8h}{
+\section{data.h File Reference}
+\label{data_8h}\index{data.h@{data.h}}
+}
+{\tt \#include $<$Phonon/MediaObject$>$}\par
+{\tt \#include $<$Phonon/VideoWidget$>$}\par
+{\tt \#include $<$Phonon/AudioOutput$>$}\par
+{\tt \#include $<$Phonon/VideoPlayer$>$}\par
+{\tt \#include $<$Phonon/SeekSlider$>$}\par
+{\tt \#include $<$Phonon/VolumeSlider$>$}\par
+{\tt \#include $<$QVBoxLayout$>$}\par
+{\tt \#include $<$QHBoxLayout$>$}\par
+{\tt \#include $<$QFrame$>$}\par
+{\tt \#include $<$QtGui/QMainWindow$>$}\par
+{\tt \#include $<$QSlider$>$}\par
+{\tt \#include $<$QPushButton$>$}\par
+{\tt \#include $<$QPointer$>$}\par
+{\tt \#include $<$vector$>$}\par
+{\tt \#include $<$sstream$>$}\par
+{\tt \#include $<$iostream$>$}\par
+{\tt \#include \char`\"{}videowidgetext.h\char`\"{}}\par
+{\tt \#include \char`\"{}guihelper.h\char`\"{}}\par
+{\tt \#include \char`\"{}SSViewScope.h\char`\"{}}\par
+{\tt \#include \char`\"{}SSViewVideo.h\char`\"{}}\par
+{\tt \#include \char`\"{}SSViewStickman.h\char`\"{}}\par
+{\tt \#include \char`\"{}SSViewScatter.h\char`\"{}}\par
+{\tt \#include \char`\"{}SSViewLabel.h\char`\"{}}\par
+{\tt \#include \char`\"{}NPlotWidgetScope.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{class_s_i_g_n_a_l_d_a_t_a}{SIGNALDATA}
+\item 
+struct \hyperlink{struct_p_l_o_t_v_i_e_w_p_a_r_a_m}{PLOTVIEWPARAM}
+\item 
+struct \hyperlink{struct_s_r_c_i_d}{SRCID}
+\item 
+class \hyperlink{class_v_i_e_w_i_d}{VIEWID}
+\item 
+class \hyperlink{class_v_i_e_w_d_a_t_a}{VIEWDATA}
+\item 
+class \hyperlink{class_s_c_o_p_e_v_i_e_w_d_a_t_a}{SCOPEVIEWDATA}
+\item 
+class \hyperlink{class_v_i_d_e_o_v_i_e_w_d_a_t_a}{VIDEOVIEWDATA}
+\item 
+class \hyperlink{class_s_t_i_c_k_m_a_n_v_i_e_w_d_a_t_a}{STICKMANVIEWDATA}
+\item 
+class \hyperlink{class_s_c_a_t_t_e_r_v_i_e_w_d_a_t_a}{SCATTERVIEWDATA}
+\item 
+class \hyperlink{class_l_a_b_e_l_v_i_e_w_d_a_t_a}{LABELVIEWDATA}
+\item 
+struct \hyperlink{struct_r_e_l_a_t_i_o_n}{RELATION}
+\item 
+struct \hyperlink{struct_r_e_s_a_m_p_l_e_r_e_l}{RESAMPLEREL}
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef std::vector$<$ int $>$ \hyperlink{data_8h_63718d7c87eed943a40655be0dd70210}{TRACEI}
+\item 
+typedef std::vector$<$ int $>$ $\ast$ \hyperlink{data_8h_fc86256a7f121caf21919387c9a373c7}{TRACERI}
+\item 
+typedef std::vector$<$ \hyperlink{data_8h_fc86256a7f121caf21919387c9a373c7}{TRACERI} $>$ \hyperlink{data_8h_cbba0387203ed452657771b112721cd1}{TRACESRI}
+\item 
+typedef std::vector$<$ \hyperlink{class_s_c_o_p_e_v_i_e_w_d_a_t_a}{SCOPEVIEWDATA} $>$ \hyperlink{data_8h_f7e132dec2dc7ae40c113b1d6992a0fb}{SCOPEVIEWDATAS}
+\item 
+typedef std::vector$<$ std::vector$<$ string $>$ $>$ \hyperlink{data_8h_1c37d931f88ec88b85ab2086a6f09809}{SOURCEFILES}
+\item 
+typedef std::vector$<$ \hyperlink{class_v_i_d_e_o_v_i_e_w_d_a_t_a}{VIDEOVIEWDATA} $>$ \hyperlink{data_8h_3df722f793b1c61957af5906c5ac4e92}{VIDEOVIEWDATAS}
+\item 
+typedef std::vector$<$ \hyperlink{class_s_t_i_c_k_m_a_n_v_i_e_w_d_a_t_a}{STICKMANVIEWDATA} $>$ \hyperlink{data_8h_72163597ee460eb79571f264074618e7}{STICKMANVIEWDATAS}
+\item 
+typedef std::vector$<$ \hyperlink{class_s_c_a_t_t_e_r_v_i_e_w_d_a_t_a}{SCATTERVIEWDATA} $>$ \hyperlink{data_8h_a953c53274e98dacd22a04f1ea780f9a}{SCATTERVIEWDATAS}
+\item 
+typedef std::vector$<$ \hyperlink{class_l_a_b_e_l_v_i_e_w_d_a_t_a}{LABELVIEWDATA} $>$ \hyperlink{data_8h_bd710be392f835c57dbf67d4a36032ae}{LABELVIEWDATAS}
+\item 
+typedef std::vector$<$ std::vector$<$ int $>$ $>$ \hyperlink{data_8h_7b296bba56ab2e0ad6167aadcafe80d2}{REFERENCEPOINTS}
+\item 
+typedef std::vector$<$ \hyperlink{struct_r_e_l_a_t_i_o_n}{RELATION} $>$ \hyperlink{data_8h_4b97445fb0d920ec53954c1420f3217c}{RELATIONS}
+\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{data_8h_5f7cbbdfa741baae674e395b0378f6a2}{SRCTYPE} \{ \hyperlink{data_8h_5f7cbbdfa741baae674e395b0378f6a29d8fdee1fe5d0f22fbcc70e9f154572f}{SRCTYPEUNDEFINED} = 0, 
+\hyperlink{data_8h_5f7cbbdfa741baae674e395b0378f6a2a353411a18ff7db2587a6bd9ed29dbff}{SRCTYPESIGNAL} = 1000, 
+\hyperlink{data_8h_5f7cbbdfa741baae674e395b0378f6a249cc9bfd4e0f47c8b55c4b6e50be1523}{SRCTYPEVIDEO}
+ \}
+\item 
+enum \hyperlink{data_8h_df19f45a6b4a54e345761faa6837c333}{VIEWTYPE} \{ \par
+\hyperlink{data_8h_df19f45a6b4a54e345761faa6837c3336fdbbc61b028063947d91ee0aa1967d4}{VIEWTYPEUNDEFINED} = 0, 
+\hyperlink{data_8h_df19f45a6b4a54e345761faa6837c33318efbdf67e257ffc61cce8ab073fa6c0}{VIEWTYPEFIRST} = 1000, 
+\hyperlink{data_8h_df19f45a6b4a54e345761faa6837c333c91a8c26729a3235d98941303a1a6d03}{VIEWTYPESCOPE} = 1000, 
+\hyperlink{data_8h_df19f45a6b4a54e345761faa6837c3336f6be9c085b585b664114c286f63330e}{VIEWTYPESTICKMAN}, 
+\par
+\hyperlink{data_8h_df19f45a6b4a54e345761faa6837c3331c9762f173cd86046f69905e7af946a0}{VIEWTYPEVIDEO}, 
+\hyperlink{data_8h_df19f45a6b4a54e345761faa6837c333d93ad08b7afbf39472d1c24f69c88e7f}{VIEWTYPESCATTER}, 
+\hyperlink{data_8h_df19f45a6b4a54e345761faa6837c333839865e64be8b88928e4002b0dd79037}{VIEWTYPELABEL}, 
+\hyperlink{data_8h_df19f45a6b4a54e345761faa6837c33306563543966c5a714d3d70d2378e0275}{VIEWTYPELAST} = VIEWTYPELABEL
+ \}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{data_8h_4b97445fb0d920ec53954c1420f3217c}{RELATIONS} \hyperlink{data_8h_62c4fa6d0518bd294d4594c6c881c448}{FindGraph} (\hyperlink{data_8h_4b97445fb0d920ec53954c1420f3217c}{RELATIONS} \&Relations, int x1)
+\begin{CompactList}\small\item\em Finds a graph connected to edge x1 following Relations. \item\end{CompactList}\item 
+bool \hyperlink{data_8h_dcecc75ae7d05d1eb1040b02cad1bdf6}{IsRelationConflicting} (\hyperlink{data_8h_4b97445fb0d920ec53954c1420f3217c}{RELATIONS} \&Relations, int x1, int x2)
+\begin{CompactList}\small\item\em Checks whether the relation x1-x2 is in conflict with the existing relations Relations. \item\end{CompactList}\item 
+QString \hyperlink{data_8h_6fcc31c9f91df3724fea175e2b499db9}{RelationToText} (\hyperlink{struct_r_e_l_a_t_i_o_n}{RELATION} \&r)
+\item 
+vector$<$ \hyperlink{data_8h_4b97445fb0d920ec53954c1420f3217c}{RELATIONS} $>$ \hyperlink{data_8h_21cfa0e56776a5e1ddb457f7b110a097}{FindGraphs} (\hyperlink{data_8h_4b97445fb0d920ec53954c1420f3217c}{RELATIONS} Relations)
+\begin{CompactList}\small\item\em Finds a set of disconnected graphs within Relations. \item\end{CompactList}\item 
+void \hyperlink{data_8h_f9f2eb0b1b1d78e01d38fc988684deaf}{DoubleToRatio} (double v, int \&n, int \&d, int maxd=10000)
+\begin{CompactList}\small\item\em Converts double v to ratio of integers n/d, where d is at most maxd. \item\end{CompactList}\item 
+QString \hyperlink{data_8h_96bc83b772bff481176b6ddfaab73f60}{GraphToString} (vector$<$ int $>$ g)
+\begin{CompactList}\small\item\em Converts vector$<$int$>$ g to a string representation of the form \char`\"{}g\mbox{[}0\mbox{]}-g\mbox{[}1\mbox{]}-g\mbox{[}2\mbox{]}...-g\mbox{[}n\mbox{]}\char`\"{}. \item\end{CompactList}\item 
+std::vector$<$ std::vector$<$ int $>$ $>$ \hyperlink{data_8h_3f2c40ec0a7831fb1cfbb606977d43ef}{parse} (char $\ast$data, bool \&ok)
+\begin{CompactList}\small\item\em parses a null-terminated block of data for space/tab delimited values. \item\end{CompactList}\item 
+void \hyperlink{data_8h_7462dbc2e11c40ca202c65c60fda53f1}{ComputeAllSourceOffsetFrom} (\hyperlink{data_8h_4b97445fb0d920ec53954c1420f3217c}{RELATIONS} \&RelationsActive, int sourceidx, int value, std::map$<$ int, int $>$ \&offsetout)
+\begin{CompactList}\small\item\em Finds the offset of linked signal/video sources, from the the current position of the master source. \item\end{CompactList}\item 
+{\footnotesize template$<$class T $>$ }\\bool \hyperlink{data_8h_daf0eeef7d2c87ee7a0a41a63266e198}{SplitInVector} (string str, string split, vector$<$ T $>$ \&r, ios\_\-base \&(\&b)(ios\_\-base \&)=dec)
+\item 
+{\footnotesize template$<$class T $>$ }\\bool \hyperlink{data_8h_e454d55d865b9b1a5048e9b2cd904b85}{SplitInVector} (QString qstr, QString split, vector$<$ T $>$ \&r, ios\_\-base \&(\&b)(ios\_\-base \&)=dec)
+\end{CompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{data_8h_bd710be392f835c57dbf67d4a36032ae}{
+\index{data.h@{data.h}!LABELVIEWDATAS@{LABELVIEWDATAS}}
+\index{LABELVIEWDATAS@{LABELVIEWDATAS}!data.h@{data.h}}
+\subsubsection[{LABELVIEWDATAS}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<${\bf LABELVIEWDATA}$>$ {\bf LABELVIEWDATAS}}}
+\label{data_8h_bd710be392f835c57dbf67d4a36032ae}
+
+
+\hypertarget{data_8h_7b296bba56ab2e0ad6167aadcafe80d2}{
+\index{data.h@{data.h}!REFERENCEPOINTS@{REFERENCEPOINTS}}
+\index{REFERENCEPOINTS@{REFERENCEPOINTS}!data.h@{data.h}}
+\subsubsection[{REFERENCEPOINTS}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<$std::vector$<$int$>$ $>$ {\bf REFERENCEPOINTS}}}
+\label{data_8h_7b296bba56ab2e0ad6167aadcafe80d2}
+
+
+\hypertarget{data_8h_4b97445fb0d920ec53954c1420f3217c}{
+\index{data.h@{data.h}!RELATIONS@{RELATIONS}}
+\index{RELATIONS@{RELATIONS}!data.h@{data.h}}
+\subsubsection[{RELATIONS}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<${\bf RELATION}$>$ {\bf RELATIONS}}}
+\label{data_8h_4b97445fb0d920ec53954c1420f3217c}
+
+
+\hypertarget{data_8h_a953c53274e98dacd22a04f1ea780f9a}{
+\index{data.h@{data.h}!SCATTERVIEWDATAS@{SCATTERVIEWDATAS}}
+\index{SCATTERVIEWDATAS@{SCATTERVIEWDATAS}!data.h@{data.h}}
+\subsubsection[{SCATTERVIEWDATAS}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<${\bf SCATTERVIEWDATA}$>$ {\bf SCATTERVIEWDATAS}}}
+\label{data_8h_a953c53274e98dacd22a04f1ea780f9a}
+
+
+\hypertarget{data_8h_f7e132dec2dc7ae40c113b1d6992a0fb}{
+\index{data.h@{data.h}!SCOPEVIEWDATAS@{SCOPEVIEWDATAS}}
+\index{SCOPEVIEWDATAS@{SCOPEVIEWDATAS}!data.h@{data.h}}
+\subsubsection[{SCOPEVIEWDATAS}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<${\bf SCOPEVIEWDATA}$>$ {\bf SCOPEVIEWDATAS}}}
+\label{data_8h_f7e132dec2dc7ae40c113b1d6992a0fb}
+
+
+\hypertarget{data_8h_1c37d931f88ec88b85ab2086a6f09809}{
+\index{data.h@{data.h}!SOURCEFILES@{SOURCEFILES}}
+\index{SOURCEFILES@{SOURCEFILES}!data.h@{data.h}}
+\subsubsection[{SOURCEFILES}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<$std::vector$<$string$>$ $>$ {\bf SOURCEFILES}}}
+\label{data_8h_1c37d931f88ec88b85ab2086a6f09809}
+
+
+\hypertarget{data_8h_72163597ee460eb79571f264074618e7}{
+\index{data.h@{data.h}!STICKMANVIEWDATAS@{STICKMANVIEWDATAS}}
+\index{STICKMANVIEWDATAS@{STICKMANVIEWDATAS}!data.h@{data.h}}
+\subsubsection[{STICKMANVIEWDATAS}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<${\bf STICKMANVIEWDATA}$>$ {\bf STICKMANVIEWDATAS}}}
+\label{data_8h_72163597ee460eb79571f264074618e7}
+
+
+\hypertarget{data_8h_63718d7c87eed943a40655be0dd70210}{
+\index{data.h@{data.h}!TRACEI@{TRACEI}}
+\index{TRACEI@{TRACEI}!data.h@{data.h}}
+\subsubsection[{TRACEI}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<$int$>$ {\bf TRACEI}}}
+\label{data_8h_63718d7c87eed943a40655be0dd70210}
+
+
+\hypertarget{data_8h_fc86256a7f121caf21919387c9a373c7}{
+\index{data.h@{data.h}!TRACERI@{TRACERI}}
+\index{TRACERI@{TRACERI}!data.h@{data.h}}
+\subsubsection[{TRACERI}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<$int$>$$\ast$ {\bf TRACERI}}}
+\label{data_8h_fc86256a7f121caf21919387c9a373c7}
+
+
+\hypertarget{data_8h_cbba0387203ed452657771b112721cd1}{
+\index{data.h@{data.h}!TRACESRI@{TRACESRI}}
+\index{TRACESRI@{TRACESRI}!data.h@{data.h}}
+\subsubsection[{TRACESRI}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<${\bf TRACERI}$>$ {\bf TRACESRI}}}
+\label{data_8h_cbba0387203ed452657771b112721cd1}
+
+
+\hypertarget{data_8h_3df722f793b1c61957af5906c5ac4e92}{
+\index{data.h@{data.h}!VIDEOVIEWDATAS@{VIDEOVIEWDATAS}}
+\index{VIDEOVIEWDATAS@{VIDEOVIEWDATAS}!data.h@{data.h}}
+\subsubsection[{VIDEOVIEWDATAS}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<${\bf VIDEOVIEWDATA}$>$ {\bf VIDEOVIEWDATAS}}}
+\label{data_8h_3df722f793b1c61957af5906c5ac4e92}
+
+
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{data_8h_5f7cbbdfa741baae674e395b0378f6a2}{
+\index{data.h@{data.h}!SRCTYPE@{SRCTYPE}}
+\index{SRCTYPE@{SRCTYPE}!data.h@{data.h}}
+\subsubsection[{SRCTYPE}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf SRCTYPE}}}
+\label{data_8h_5f7cbbdfa741baae674e395b0378f6a2}
+
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{SRCTYPEUNDEFINED@{SRCTYPEUNDEFINED}!data.h@{data.h}}\index{data.h@{data.h}!SRCTYPEUNDEFINED@{SRCTYPEUNDEFINED}}\item[{\em 
+\hypertarget{data_8h_5f7cbbdfa741baae674e395b0378f6a29d8fdee1fe5d0f22fbcc70e9f154572f}{
+SRCTYPEUNDEFINED}
+\label{data_8h_5f7cbbdfa741baae674e395b0378f6a29d8fdee1fe5d0f22fbcc70e9f154572f}
+}]\index{SRCTYPESIGNAL@{SRCTYPESIGNAL}!data.h@{data.h}}\index{data.h@{data.h}!SRCTYPESIGNAL@{SRCTYPESIGNAL}}\item[{\em 
+\hypertarget{data_8h_5f7cbbdfa741baae674e395b0378f6a2a353411a18ff7db2587a6bd9ed29dbff}{
+SRCTYPESIGNAL}
+\label{data_8h_5f7cbbdfa741baae674e395b0378f6a2a353411a18ff7db2587a6bd9ed29dbff}
+}]\index{SRCTYPEVIDEO@{SRCTYPEVIDEO}!data.h@{data.h}}\index{data.h@{data.h}!SRCTYPEVIDEO@{SRCTYPEVIDEO}}\item[{\em 
+\hypertarget{data_8h_5f7cbbdfa741baae674e395b0378f6a249cc9bfd4e0f47c8b55c4b6e50be1523}{
+SRCTYPEVIDEO}
+\label{data_8h_5f7cbbdfa741baae674e395b0378f6a249cc9bfd4e0f47c8b55c4b6e50be1523}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{data_8h_df19f45a6b4a54e345761faa6837c333}{
+\index{data.h@{data.h}!VIEWTYPE@{VIEWTYPE}}
+\index{VIEWTYPE@{VIEWTYPE}!data.h@{data.h}}
+\subsubsection[{VIEWTYPE}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf VIEWTYPE}}}
+\label{data_8h_df19f45a6b4a54e345761faa6837c333}
+
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{VIEWTYPEUNDEFINED@{VIEWTYPEUNDEFINED}!data.h@{data.h}}\index{data.h@{data.h}!VIEWTYPEUNDEFINED@{VIEWTYPEUNDEFINED}}\item[{\em 
+\hypertarget{data_8h_df19f45a6b4a54e345761faa6837c3336fdbbc61b028063947d91ee0aa1967d4}{
+VIEWTYPEUNDEFINED}
+\label{data_8h_df19f45a6b4a54e345761faa6837c3336fdbbc61b028063947d91ee0aa1967d4}
+}]\index{VIEWTYPEFIRST@{VIEWTYPEFIRST}!data.h@{data.h}}\index{data.h@{data.h}!VIEWTYPEFIRST@{VIEWTYPEFIRST}}\item[{\em 
+\hypertarget{data_8h_df19f45a6b4a54e345761faa6837c33318efbdf67e257ffc61cce8ab073fa6c0}{
+VIEWTYPEFIRST}
+\label{data_8h_df19f45a6b4a54e345761faa6837c33318efbdf67e257ffc61cce8ab073fa6c0}
+}]\index{VIEWTYPESCOPE@{VIEWTYPESCOPE}!data.h@{data.h}}\index{data.h@{data.h}!VIEWTYPESCOPE@{VIEWTYPESCOPE}}\item[{\em 
+\hypertarget{data_8h_df19f45a6b4a54e345761faa6837c333c91a8c26729a3235d98941303a1a6d03}{
+VIEWTYPESCOPE}
+\label{data_8h_df19f45a6b4a54e345761faa6837c333c91a8c26729a3235d98941303a1a6d03}
+}]\index{VIEWTYPESTICKMAN@{VIEWTYPESTICKMAN}!data.h@{data.h}}\index{data.h@{data.h}!VIEWTYPESTICKMAN@{VIEWTYPESTICKMAN}}\item[{\em 
+\hypertarget{data_8h_df19f45a6b4a54e345761faa6837c3336f6be9c085b585b664114c286f63330e}{
+VIEWTYPESTICKMAN}
+\label{data_8h_df19f45a6b4a54e345761faa6837c3336f6be9c085b585b664114c286f63330e}
+}]\index{VIEWTYPEVIDEO@{VIEWTYPEVIDEO}!data.h@{data.h}}\index{data.h@{data.h}!VIEWTYPEVIDEO@{VIEWTYPEVIDEO}}\item[{\em 
+\hypertarget{data_8h_df19f45a6b4a54e345761faa6837c3331c9762f173cd86046f69905e7af946a0}{
+VIEWTYPEVIDEO}
+\label{data_8h_df19f45a6b4a54e345761faa6837c3331c9762f173cd86046f69905e7af946a0}
+}]\index{VIEWTYPESCATTER@{VIEWTYPESCATTER}!data.h@{data.h}}\index{data.h@{data.h}!VIEWTYPESCATTER@{VIEWTYPESCATTER}}\item[{\em 
+\hypertarget{data_8h_df19f45a6b4a54e345761faa6837c333d93ad08b7afbf39472d1c24f69c88e7f}{
+VIEWTYPESCATTER}
+\label{data_8h_df19f45a6b4a54e345761faa6837c333d93ad08b7afbf39472d1c24f69c88e7f}
+}]\index{VIEWTYPELABEL@{VIEWTYPELABEL}!data.h@{data.h}}\index{data.h@{data.h}!VIEWTYPELABEL@{VIEWTYPELABEL}}\item[{\em 
+\hypertarget{data_8h_df19f45a6b4a54e345761faa6837c333839865e64be8b88928e4002b0dd79037}{
+VIEWTYPELABEL}
+\label{data_8h_df19f45a6b4a54e345761faa6837c333839865e64be8b88928e4002b0dd79037}
+}]\index{VIEWTYPELAST@{VIEWTYPELAST}!data.h@{data.h}}\index{data.h@{data.h}!VIEWTYPELAST@{VIEWTYPELAST}}\item[{\em 
+\hypertarget{data_8h_df19f45a6b4a54e345761faa6837c33306563543966c5a714d3d70d2378e0275}{
+VIEWTYPELAST}
+\label{data_8h_df19f45a6b4a54e345761faa6837c33306563543966c5a714d3d70d2378e0275}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{data_8h_7462dbc2e11c40ca202c65c60fda53f1}{
+\index{data.h@{data.h}!ComputeAllSourceOffsetFrom@{ComputeAllSourceOffsetFrom}}
+\index{ComputeAllSourceOffsetFrom@{ComputeAllSourceOffsetFrom}!data.h@{data.h}}
+\subsubsection[{ComputeAllSourceOffsetFrom}]{\setlength{\rightskip}{0pt plus 5cm}void ComputeAllSourceOffsetFrom ({\bf RELATIONS} \& {\em RelationsActive}, \/  int {\em sourceidx}, \/  int {\em value}, \/  std::map$<$ int, int $>$ \& {\em offsetout})}}
+\label{data_8h_7462dbc2e11c40ca202c65c60fda53f1}
+
+
+Finds the offset of linked signal/video sources, from the the current position of the master source. 
+
+RelationsActive: all the relations that are currently enabled sourceidx/value: offset of the source gainst which the others must be linked offsetout: pairs of $<$source,offset$>$
+
+The ID are absolute (no distinction between video or signal) \hypertarget{data_8h_f9f2eb0b1b1d78e01d38fc988684deaf}{
+\index{data.h@{data.h}!DoubleToRatio@{DoubleToRatio}}
+\index{DoubleToRatio@{DoubleToRatio}!data.h@{data.h}}
+\subsubsection[{DoubleToRatio}]{\setlength{\rightskip}{0pt plus 5cm}void DoubleToRatio (double {\em v}, \/  int \& {\em n}, \/  int \& {\em d}, \/  int {\em maxd} = {\tt 10000})}}
+\label{data_8h_f9f2eb0b1b1d78e01d38fc988684deaf}
+
+
+Converts double v to ratio of integers n/d, where d is at most maxd. 
+
+\hypertarget{data_8h_62c4fa6d0518bd294d4594c6c881c448}{
+\index{data.h@{data.h}!FindGraph@{FindGraph}}
+\index{FindGraph@{FindGraph}!data.h@{data.h}}
+\subsubsection[{FindGraph}]{\setlength{\rightskip}{0pt plus 5cm}{\bf RELATIONS} FindGraph ({\bf RELATIONS} \& {\em Relations}, \/  int {\em x1})}}
+\label{data_8h_62c4fa6d0518bd294d4594c6c881c448}
+
+
+Finds a graph connected to edge x1 following Relations. 
+
+Returns a set of relations that, when followed in order, allow to traverse the graph.
+
+This functions allows to make sure that there are no conflicting sets of relations active. A conflicting relation is for instance adding a relation between s1-s2 when the current active relations include s0-s1, s1-s2. In other words, this function looks for circular relations within the set.
+
+This function works even if the existing set of relations is conflicting; circular relations are correctly handled. (how?)
+
+A recursive implementation is avoided. \hypertarget{data_8h_21cfa0e56776a5e1ddb457f7b110a097}{
+\index{data.h@{data.h}!FindGraphs@{FindGraphs}}
+\index{FindGraphs@{FindGraphs}!data.h@{data.h}}
+\subsubsection[{FindGraphs}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf RELATIONS}$>$ FindGraphs ({\bf RELATIONS} {\em Relations})}}
+\label{data_8h_21cfa0e56776a5e1ddb457f7b110a097}
+
+
+Finds a set of disconnected graphs within Relations. 
+
+Returns a vector$<$RELATIONS$>$...... Each RELATIONS is a standalone graph. \hypertarget{data_8h_96bc83b772bff481176b6ddfaab73f60}{
+\index{data.h@{data.h}!GraphToString@{GraphToString}}
+\index{GraphToString@{GraphToString}!data.h@{data.h}}
+\subsubsection[{GraphToString}]{\setlength{\rightskip}{0pt plus 5cm}QString GraphToString (vector$<$ int $>$ {\em g})}}
+\label{data_8h_96bc83b772bff481176b6ddfaab73f60}
+
+
+Converts vector$<$int$>$ g to a string representation of the form \char`\"{}g\mbox{[}0\mbox{]}-g\mbox{[}1\mbox{]}-g\mbox{[}2\mbox{]}...-g\mbox{[}n\mbox{]}\char`\"{}. 
+
+\hypertarget{data_8h_dcecc75ae7d05d1eb1040b02cad1bdf6}{
+\index{data.h@{data.h}!IsRelationConflicting@{IsRelationConflicting}}
+\index{IsRelationConflicting@{IsRelationConflicting}!data.h@{data.h}}
+\subsubsection[{IsRelationConflicting}]{\setlength{\rightskip}{0pt plus 5cm}bool IsRelationConflicting ({\bf RELATIONS} \& {\em Relations}, \/  int {\em x1}, \/  int {\em x2})}}
+\label{data_8h_dcecc75ae7d05d1eb1040b02cad1bdf6}
+
+
+Checks whether the relation x1-x2 is in conflict with the existing relations Relations. 
+
+\hypertarget{data_8h_3f2c40ec0a7831fb1cfbb606977d43ef}{
+\index{data.h@{data.h}!parse@{parse}}
+\index{parse@{parse}!data.h@{data.h}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$std::vector$<$int$>$ $>$ parse (char $\ast$ {\em data}, \/  bool \& {\em ok})}}
+\label{data_8h_3f2c40ec0a7831fb1cfbb606977d43ef}
+
+
+parses a null-terminated block of data for space/tab delimited values. 
+
+Parses signed integers. Handles specially 'NaN': replace the value by zero. \hypertarget{data_8h_6fcc31c9f91df3724fea175e2b499db9}{
+\index{data.h@{data.h}!RelationToText@{RelationToText}}
+\index{RelationToText@{RelationToText}!data.h@{data.h}}
+\subsubsection[{RelationToText}]{\setlength{\rightskip}{0pt plus 5cm}QString RelationToText ({\bf RELATION} \& {\em r})}}
+\label{data_8h_6fcc31c9f91df3724fea175e2b499db9}
+
+
+\hypertarget{data_8h_e454d55d865b9b1a5048e9b2cd904b85}{
+\index{data.h@{data.h}!SplitInVector@{SplitInVector}}
+\index{SplitInVector@{SplitInVector}!data.h@{data.h}}
+\subsubsection[{SplitInVector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool SplitInVector (QString {\em qstr}, \/  QString {\em split}, \/  vector$<$ T $>$ \& {\em r}, \/  ios\_\-base \&(\&)(ios\_\-base \&) {\em b} = {\tt dec})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{data_8h_e454d55d865b9b1a5048e9b2cd904b85}
+
+
+\hypertarget{data_8h_daf0eeef7d2c87ee7a0a41a63266e198}{
+\index{data.h@{data.h}!SplitInVector@{SplitInVector}}
+\index{SplitInVector@{SplitInVector}!data.h@{data.h}}
+\subsubsection[{SplitInVector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool SplitInVector (string {\em str}, \/  string {\em split}, \/  vector$<$ T $>$ \& {\em r}, \/  ios\_\-base \&(\&)(ios\_\-base \&) {\em b} = {\tt dec})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{data_8h_daf0eeef7d2c87ee7a0a41a63266e198}
+
+

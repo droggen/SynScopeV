@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Main Source="&lt;signal;demo_accel.txt&gt;&lt;signal;demo_accelgyro.txt&gt;&lt;video;demo_vid1.avi&gt;&lt;video;demo_vid2.avi&gt;;&lt;video;demo_vid3.asf&gt;" View="&lt;scope;0;Sensor 1: X,Y,Z acceleration;2 3 4;yscale=200 800;color=ff0000 00ff00 0000ff&gt;&#10;&lt;scope;1;Sensor 2: X,Y,Z acceleration;2 3 4;yscale=200 800;color=ff0000 00ff00 0000ff&gt;&#10;&lt;scope;1;Sensor 2: X,Y rotation rate;5 6 7 8;yscale=0 1023;color=7f0000 ff0000 007f00 00ff00&gt;"/>
+    <References>
+        <ReferenceData source1="0" position1="29675" source2="1" position2="33640"/>
+        <ReferenceData source1="0" position1="164807" source2="1" position2="168803"/>
+        <ReferenceData source1="0" position1="161303" source2="2" position2="133254"/>
+        <ReferenceData source1="0" position1="36804" source2="2" position2="9290"/>
+        <ReferenceData source1="0" position1="157072" source2="4" position2="4842"/>
+        <ReferenceData source1="0" position1="45218" source2="4" position2="1277"/>
+        <ReferenceData source1="4" position1="4791" source2="3" position2="7913"/>
+        <ReferenceData source1="4" position1="5094" source2="3" position2="8762"/>
+        <ReferenceData source1="4" position1="4542" source2="3" position2="7244"/>
+        <ReferenceData source1="0" position1="83927" source2="3" position2="1650"/>
+        <ReferenceData source1="0" position1="153018" source2="3" position2="7715"/>
+    </References>
+</Configuration>

@@ -1,0 +1,278 @@
+\hypertarget{class_references_dialog}{
+\section{ReferencesDialog Class Reference}
+\label{class_references_dialog}\index{ReferencesDialog@{ReferencesDialog}}
+}
+{\tt \#include $<$referencesdialog.h$>$}
+
+\subsection*{Signals}
+\begin{CompactItemize}
+\item 
+void \hyperlink{class_references_dialog_949cf022393090a9667c32d64b14ef15}{AddReference} ()
+\item 
+void \hyperlink{class_references_dialog_a3d2a1436ffccecfb90117d0ddd3803d}{RemoveReference} (int idx)
+\item 
+void \hyperlink{class_references_dialog_39a4813aa0df07c357d324b851ec0d27}{ReferenceSelected} (int idx)
+\item 
+void \hyperlink{class_references_dialog_13951c9836dd020be07f1d733efeefe7}{ChangedActiveRelations} ()
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_references_dialog_1f3990e5a3cd494c4094c77378059ddd}{ReferencesDialog} (QWidget $\ast$parent=0)
+\item 
+\hyperlink{class_references_dialog_ad24575b5bd4faab98827b988a562811}{$\sim$ReferencesDialog} ()
+\item 
+void \hyperlink{class_references_dialog_d085c5bc795c22f77d91646b83d80980}{SetReferencePoints} (\hyperlink{data_8h_7b296bba56ab2e0ad6167aadcafe80d2}{REFERENCEPOINTS} \&ref)
+\item 
+void \hyperlink{class_references_dialog_bbb001e60a9a5427fdccc08bc6877cb2}{InitRelationsUI} (int numsignalsource, int numvideosource=0)
+\begin{CompactList}\small\item\em Inits the signal linking user interface. \item\end{CompactList}\item 
+void \hyperlink{class_references_dialog_07d39aeb362342ef4be3cc1f364a5e5d}{SetRelationsAvailable} (\hyperlink{data_8h_4b97445fb0d920ec53954c1420f3217c}{RELATIONS} r)
+\begin{CompactList}\small\item\em Reflects the available relations in the signal linking UI. \item\end{CompactList}\item 
+\hyperlink{data_8h_4b97445fb0d920ec53954c1420f3217c}{RELATIONS} \hyperlink{class_references_dialog_ee8ef020f8207cdbc20fe135a6e484ea}{GetRelationsActive} ()
+\begin{CompactList}\small\item\em Returns the selected \char`\"{}active\char`\"{} relations to link sources. \item\end{CompactList}\item 
+bool \hyperlink{class_references_dialog_8f0db69f00d805371a0f96a8fa5b1325}{GetLinkState} ()
+\item 
+void \hyperlink{class_references_dialog_b00305898821b7a93bdf16ada070e65e}{ClearLinks} ()
+\begin{CompactList}\small\item\em Clear (uncheck) all the signal links, including global enable. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{class_references_dialog_b6cd42a4676ac1a0231eef46e086f509}{changeEvent} (QEvent $\ast$e)
+\end{CompactItemize}
+\subsection*{Private Slots}
+\begin{CompactItemize}
+\item 
+void \hyperlink{class_references_dialog_f32e8c338d1772dab03e7049036c47ac}{on\_\-pushButton\_\-Clear\_\-clicked} ()
+\begin{CompactList}\small\item\em Clear reference points. \item\end{CompactList}\item 
+void \hyperlink{class_references_dialog_b83aae9c0988a30af4f832fc82acb626}{on\_\-checkBox\_\-EnableSignalLinking\_\-toggled} (bool checked)
+\item 
+void \hyperlink{class_references_dialog_c6c6d9391d07dafc29868088588489a3}{on\_\-pushButton\_\-Remove\_\-clicked} ()
+\item 
+void \hyperlink{class_references_dialog_5856ea2aab90b66afd6ed6d1d88e1c49}{on\_\-pushButton\_\-Add\_\-clicked} ()
+\item 
+void \hyperlink{class_references_dialog_8b163293d7e60e642a9ccd55ba0d5a8b}{on\_\-currentRowChanged} (int currentRow)
+\begin{CompactList}\small\item\em this is the working shit! \item\end{CompactList}\item 
+void \hyperlink{class_references_dialog_e5e604ebe9d640fc8dce542ff6dbc8a4}{on\_\-LinkUIStateChanged} (int state)
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+QString \hyperlink{class_references_dialog_c9d8d09d650f73f5f55aa86e0e5c2cd7}{IDX2Txt} (int idx)
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+Ui::ReferencesDialog $\ast$ \hyperlink{class_references_dialog_cc63187266913a0639e2dbe11782c772}{m\_\-ui}
+\item 
+int \hyperlink{class_references_dialog_cd8062e49e77e41d80d81a074a3a9934}{NumSignalSource}
+\item 
+int \hyperlink{class_references_dialog_4d3fd938d7e33ec8adc8659294906a81}{NumVideoSource}
+\item 
+QGridLayout $\ast$ \hyperlink{class_references_dialog_8bbbdea6e4f6324c6ebc244a7388d5b4}{gridLayout\_\-Link}
+\item 
+vector$<$ vector$<$ QWidget $\ast$ $>$ $>$ \hyperlink{class_references_dialog_aa96dd6f334be4110a22c347af4a3f32}{LinkWidgets}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_references_dialog_1f3990e5a3cd494c4094c77378059ddd}{
+\index{ReferencesDialog@{ReferencesDialog}!ReferencesDialog@{ReferencesDialog}}
+\index{ReferencesDialog@{ReferencesDialog}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{ReferencesDialog}]{\setlength{\rightskip}{0pt plus 5cm}ReferencesDialog::ReferencesDialog (QWidget $\ast$ {\em parent} = {\tt 0})}}
+\label{class_references_dialog_1f3990e5a3cd494c4094c77378059ddd}
+
+
+\hypertarget{class_references_dialog_ad24575b5bd4faab98827b988a562811}{
+\index{ReferencesDialog@{ReferencesDialog}!$\sim$ReferencesDialog@{$\sim$ReferencesDialog}}
+\index{$\sim$ReferencesDialog@{$\sim$ReferencesDialog}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{$\sim$ReferencesDialog}]{\setlength{\rightskip}{0pt plus 5cm}ReferencesDialog::$\sim$ReferencesDialog ()}}
+\label{class_references_dialog_ad24575b5bd4faab98827b988a562811}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_references_dialog_949cf022393090a9667c32d64b14ef15}{
+\index{ReferencesDialog@{ReferencesDialog}!AddReference@{AddReference}}
+\index{AddReference@{AddReference}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{AddReference}]{\setlength{\rightskip}{0pt plus 5cm}void ReferencesDialog::AddReference ()\hspace{0.3cm}{\tt  \mbox{[}signal\mbox{]}}}}
+\label{class_references_dialog_949cf022393090a9667c32d64b14ef15}
+
+
+\hypertarget{class_references_dialog_13951c9836dd020be07f1d733efeefe7}{
+\index{ReferencesDialog@{ReferencesDialog}!ChangedActiveRelations@{ChangedActiveRelations}}
+\index{ChangedActiveRelations@{ChangedActiveRelations}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{ChangedActiveRelations}]{\setlength{\rightskip}{0pt plus 5cm}void ReferencesDialog::ChangedActiveRelations ()\hspace{0.3cm}{\tt  \mbox{[}signal\mbox{]}}}}
+\label{class_references_dialog_13951c9836dd020be07f1d733efeefe7}
+
+
+\hypertarget{class_references_dialog_b6cd42a4676ac1a0231eef46e086f509}{
+\index{ReferencesDialog@{ReferencesDialog}!changeEvent@{changeEvent}}
+\index{changeEvent@{changeEvent}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{changeEvent}]{\setlength{\rightskip}{0pt plus 5cm}void ReferencesDialog::changeEvent (QEvent $\ast$ {\em e})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{class_references_dialog_b6cd42a4676ac1a0231eef46e086f509}
+
+
+\hypertarget{class_references_dialog_b00305898821b7a93bdf16ada070e65e}{
+\index{ReferencesDialog@{ReferencesDialog}!ClearLinks@{ClearLinks}}
+\index{ClearLinks@{ClearLinks}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{ClearLinks}]{\setlength{\rightskip}{0pt plus 5cm}void ReferencesDialog::ClearLinks ()}}
+\label{class_references_dialog_b00305898821b7a93bdf16ada070e65e}
+
+
+Clear (uncheck) all the signal links, including global enable. 
+
+\hypertarget{class_references_dialog_8f0db69f00d805371a0f96a8fa5b1325}{
+\index{ReferencesDialog@{ReferencesDialog}!GetLinkState@{GetLinkState}}
+\index{GetLinkState@{GetLinkState}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{GetLinkState}]{\setlength{\rightskip}{0pt plus 5cm}bool ReferencesDialog::GetLinkState ()}}
+\label{class_references_dialog_8f0db69f00d805371a0f96a8fa5b1325}
+
+
+\hypertarget{class_references_dialog_ee8ef020f8207cdbc20fe135a6e484ea}{
+\index{ReferencesDialog@{ReferencesDialog}!GetRelationsActive@{GetRelationsActive}}
+\index{GetRelationsActive@{GetRelationsActive}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{GetRelationsActive}]{\setlength{\rightskip}{0pt plus 5cm}{\bf RELATIONS} ReferencesDialog::GetRelationsActive ()}}
+\label{class_references_dialog_ee8ef020f8207cdbc20fe135a6e484ea}
+
+
+Returns the selected \char`\"{}active\char`\"{} relations to link sources. 
+
+\begin{Desc}
+\item[Warning:]The regression values are not provided in the \hyperlink{struct_r_e_l_a_t_i_o_n}{RELATION} structure. Only the fiels x1 and x2 are valid. \end{Desc}
+\hypertarget{class_references_dialog_c9d8d09d650f73f5f55aa86e0e5c2cd7}{
+\index{ReferencesDialog@{ReferencesDialog}!IDX2Txt@{IDX2Txt}}
+\index{IDX2Txt@{IDX2Txt}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{IDX2Txt}]{\setlength{\rightskip}{0pt plus 5cm}QString ReferencesDialog::IDX2Txt (int {\em idx})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{class_references_dialog_c9d8d09d650f73f5f55aa86e0e5c2cd7}
+
+
+\hypertarget{class_references_dialog_bbb001e60a9a5427fdccc08bc6877cb2}{
+\index{ReferencesDialog@{ReferencesDialog}!InitRelationsUI@{InitRelationsUI}}
+\index{InitRelationsUI@{InitRelationsUI}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{InitRelationsUI}]{\setlength{\rightskip}{0pt plus 5cm}void ReferencesDialog::InitRelationsUI (int {\em numsignalsource}, \/  int {\em numvideosource} = {\tt 0})}}
+\label{class_references_dialog_bbb001e60a9a5427fdccc08bc6877cb2}
+
+
+Inits the signal linking user interface. 
+
+\hypertarget{class_references_dialog_b83aae9c0988a30af4f832fc82acb626}{
+\index{ReferencesDialog@{ReferencesDialog}!on\_\-checkBox\_\-EnableSignalLinking\_\-toggled@{on\_\-checkBox\_\-EnableSignalLinking\_\-toggled}}
+\index{on\_\-checkBox\_\-EnableSignalLinking\_\-toggled@{on\_\-checkBox\_\-EnableSignalLinking\_\-toggled}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{on\_\-checkBox\_\-EnableSignalLinking\_\-toggled}]{\setlength{\rightskip}{0pt plus 5cm}void ReferencesDialog::on\_\-checkBox\_\-EnableSignalLinking\_\-toggled (bool {\em checked})\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_references_dialog_b83aae9c0988a30af4f832fc82acb626}
+
+
+\hypertarget{class_references_dialog_8b163293d7e60e642a9ccd55ba0d5a8b}{
+\index{ReferencesDialog@{ReferencesDialog}!on\_\-currentRowChanged@{on\_\-currentRowChanged}}
+\index{on\_\-currentRowChanged@{on\_\-currentRowChanged}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{on\_\-currentRowChanged}]{\setlength{\rightskip}{0pt plus 5cm}void ReferencesDialog::on\_\-currentRowChanged (int {\em currentRow})\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_references_dialog_8b163293d7e60e642a9ccd55ba0d5a8b}
+
+
+this is the working shit! 
+
+\hypertarget{class_references_dialog_e5e604ebe9d640fc8dce542ff6dbc8a4}{
+\index{ReferencesDialog@{ReferencesDialog}!on\_\-LinkUIStateChanged@{on\_\-LinkUIStateChanged}}
+\index{on\_\-LinkUIStateChanged@{on\_\-LinkUIStateChanged}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{on\_\-LinkUIStateChanged}]{\setlength{\rightskip}{0pt plus 5cm}void ReferencesDialog::on\_\-LinkUIStateChanged (int {\em state})\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_references_dialog_e5e604ebe9d640fc8dce542ff6dbc8a4}
+
+
+\hypertarget{class_references_dialog_5856ea2aab90b66afd6ed6d1d88e1c49}{
+\index{ReferencesDialog@{ReferencesDialog}!on\_\-pushButton\_\-Add\_\-clicked@{on\_\-pushButton\_\-Add\_\-clicked}}
+\index{on\_\-pushButton\_\-Add\_\-clicked@{on\_\-pushButton\_\-Add\_\-clicked}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{on\_\-pushButton\_\-Add\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void ReferencesDialog::on\_\-pushButton\_\-Add\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_references_dialog_5856ea2aab90b66afd6ed6d1d88e1c49}
+
+
+\hypertarget{class_references_dialog_f32e8c338d1772dab03e7049036c47ac}{
+\index{ReferencesDialog@{ReferencesDialog}!on\_\-pushButton\_\-Clear\_\-clicked@{on\_\-pushButton\_\-Clear\_\-clicked}}
+\index{on\_\-pushButton\_\-Clear\_\-clicked@{on\_\-pushButton\_\-Clear\_\-clicked}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{on\_\-pushButton\_\-Clear\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void ReferencesDialog::on\_\-pushButton\_\-Clear\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_references_dialog_f32e8c338d1772dab03e7049036c47ac}
+
+
+Clear reference points. 
+
+\hypertarget{class_references_dialog_c6c6d9391d07dafc29868088588489a3}{
+\index{ReferencesDialog@{ReferencesDialog}!on\_\-pushButton\_\-Remove\_\-clicked@{on\_\-pushButton\_\-Remove\_\-clicked}}
+\index{on\_\-pushButton\_\-Remove\_\-clicked@{on\_\-pushButton\_\-Remove\_\-clicked}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{on\_\-pushButton\_\-Remove\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void ReferencesDialog::on\_\-pushButton\_\-Remove\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_references_dialog_c6c6d9391d07dafc29868088588489a3}
+
+
+\hypertarget{class_references_dialog_39a4813aa0df07c357d324b851ec0d27}{
+\index{ReferencesDialog@{ReferencesDialog}!ReferenceSelected@{ReferenceSelected}}
+\index{ReferenceSelected@{ReferenceSelected}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{ReferenceSelected}]{\setlength{\rightskip}{0pt plus 5cm}void ReferencesDialog::ReferenceSelected (int {\em idx})\hspace{0.3cm}{\tt  \mbox{[}signal\mbox{]}}}}
+\label{class_references_dialog_39a4813aa0df07c357d324b851ec0d27}
+
+
+\hypertarget{class_references_dialog_a3d2a1436ffccecfb90117d0ddd3803d}{
+\index{ReferencesDialog@{ReferencesDialog}!RemoveReference@{RemoveReference}}
+\index{RemoveReference@{RemoveReference}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{RemoveReference}]{\setlength{\rightskip}{0pt plus 5cm}void ReferencesDialog::RemoveReference (int {\em idx})\hspace{0.3cm}{\tt  \mbox{[}signal\mbox{]}}}}
+\label{class_references_dialog_a3d2a1436ffccecfb90117d0ddd3803d}
+
+
+\hypertarget{class_references_dialog_d085c5bc795c22f77d91646b83d80980}{
+\index{ReferencesDialog@{ReferencesDialog}!SetReferencePoints@{SetReferencePoints}}
+\index{SetReferencePoints@{SetReferencePoints}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{SetReferencePoints}]{\setlength{\rightskip}{0pt plus 5cm}void ReferencesDialog::SetReferencePoints ({\bf REFERENCEPOINTS} \& {\em ref})}}
+\label{class_references_dialog_d085c5bc795c22f77d91646b83d80980}
+
+
+\hypertarget{class_references_dialog_07d39aeb362342ef4be3cc1f364a5e5d}{
+\index{ReferencesDialog@{ReferencesDialog}!SetRelationsAvailable@{SetRelationsAvailable}}
+\index{SetRelationsAvailable@{SetRelationsAvailable}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{SetRelationsAvailable}]{\setlength{\rightskip}{0pt plus 5cm}void ReferencesDialog::SetRelationsAvailable ({\bf RELATIONS} {\em r})}}
+\label{class_references_dialog_07d39aeb362342ef4be3cc1f364a5e5d}
+
+
+Reflects the available relations in the signal linking UI. 
+
+Also fills the equation widget. 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_references_dialog_8bbbdea6e4f6324c6ebc244a7388d5b4}{
+\index{ReferencesDialog@{ReferencesDialog}!gridLayout\_\-Link@{gridLayout\_\-Link}}
+\index{gridLayout\_\-Link@{gridLayout\_\-Link}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{gridLayout\_\-Link}]{\setlength{\rightskip}{0pt plus 5cm}QGridLayout$\ast$ {\bf ReferencesDialog::gridLayout\_\-Link}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{class_references_dialog_8bbbdea6e4f6324c6ebc244a7388d5b4}
+
+
+\hypertarget{class_references_dialog_aa96dd6f334be4110a22c347af4a3f32}{
+\index{ReferencesDialog@{ReferencesDialog}!LinkWidgets@{LinkWidgets}}
+\index{LinkWidgets@{LinkWidgets}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{LinkWidgets}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$QWidget$\ast$$>$ $>$ {\bf ReferencesDialog::LinkWidgets}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{class_references_dialog_aa96dd6f334be4110a22c347af4a3f32}
+
+
+\hypertarget{class_references_dialog_cc63187266913a0639e2dbe11782c772}{
+\index{ReferencesDialog@{ReferencesDialog}!m\_\-ui@{m\_\-ui}}
+\index{m\_\-ui@{m\_\-ui}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{m\_\-ui}]{\setlength{\rightskip}{0pt plus 5cm}Ui::ReferencesDialog$\ast$ {\bf ReferencesDialog::m\_\-ui}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{class_references_dialog_cc63187266913a0639e2dbe11782c772}
+
+
+\hypertarget{class_references_dialog_cd8062e49e77e41d80d81a074a3a9934}{
+\index{ReferencesDialog@{ReferencesDialog}!NumSignalSource@{NumSignalSource}}
+\index{NumSignalSource@{NumSignalSource}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{NumSignalSource}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf ReferencesDialog::NumSignalSource}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{class_references_dialog_cd8062e49e77e41d80d81a074a3a9934}
+
+
+\hypertarget{class_references_dialog_4d3fd938d7e33ec8adc8659294906a81}{
+\index{ReferencesDialog@{ReferencesDialog}!NumVideoSource@{NumVideoSource}}
+\index{NumVideoSource@{NumVideoSource}!ReferencesDialog@{ReferencesDialog}}
+\subsubsection[{NumVideoSource}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf ReferencesDialog::NumVideoSource}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{class_references_dialog_4d3fd938d7e33ec8adc8659294906a81}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{referencesdialog_8h}{referencesdialog.h}\item 
+\hyperlink{referencesdialog_8cpp}{referencesdialog.cpp}\end{CompactItemize}

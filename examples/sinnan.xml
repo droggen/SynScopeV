@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Main Source="&lt;signal;sinnan.dat&gt;" View="&lt;scope;0;S;0 1;yscale=-1000 1000;color=ff0000 00ff00&gt;"/>
+    <References/>
+</Configuration>

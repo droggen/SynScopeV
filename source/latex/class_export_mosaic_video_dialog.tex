@@ -1,0 +1,237 @@
+\hypertarget{class_export_mosaic_video_dialog}{
+\section{ExportMosaicVideoDialog Class Reference}
+\label{class_export_mosaic_video_dialog}\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+}
+{\tt \#include $<$exportmosaicvideodialog.h$>$}
+
+\subsection*{Public Slots}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{class_export_mosaic_video_dialog_04899feff2347268ac804db6e4312993}{accept} ()
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_export_mosaic_video_dialog_b82411d35d97e6685b3b5f21b9bcd7da}{ExportMosaicVideoDialog} (QWidget $\ast$parent=0)
+\item 
+\hyperlink{class_export_mosaic_video_dialog_0aef55cc90e005b61353bc0aae814a93}{$\sim$ExportMosaicVideoDialog} ()
+\item 
+void \hyperlink{class_export_mosaic_video_dialog_90a280c0cc8cd6edbd5ce811ebaf76a7}{SetParam} (std::vector$<$ \hyperlink{struct_m_o_s_a_i_c_w_i_n_d_o_w_p_a_r_a_m}{MOSAICWINDOWPARAM} $>$ \_\-mvp, std::vector$<$ \hyperlink{struct_m_o_s_a_i_c_w_i_n_d_o_w_p_a_r_a_m}{MOSAICWINDOWPARAM} $>$ \_\-msp)
+\item 
+void \hyperlink{class_export_mosaic_video_dialog_1734cda9e540bf140c1d3b1db5ecb67b}{GetParam} (std::vector$<$ \hyperlink{struct_m_o_s_a_i_c_w_i_n_d_o_w_p_a_r_a_m}{MOSAICWINDOWPARAM} $>$ \&\_\-mvp, std::vector$<$ \hyperlink{struct_m_o_s_a_i_c_w_i_n_d_o_w_p_a_r_a_m}{MOSAICWINDOWPARAM} $>$ \&\_\-msp, int \&bitrate, int \&gop, int \&step, bool \&title, bool \&plothaxis, bool \&plotvaxis, bool \&plotframe, bool \&transparent, bool \&centercurrentsample, bool \&globaldouble)
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{class_export_mosaic_video_dialog_029e7404c6e18cc46238ee2296ea7df1}{changeEvent} (QEvent $\ast$e)
+\item 
+bool \hyperlink{class_export_mosaic_video_dialog_a359cf31ad2116e398758c844e64e442}{CheckValues} ()
+\item 
+bool \hyperlink{class_export_mosaic_video_dialog_b044f2f53678532e2c048bb697957432}{CheckVideoValues} ()
+\item 
+bool \hyperlink{class_export_mosaic_video_dialog_42a99b47c067271c55a492651a1607e9}{DataOk} (QString s, int \&v)
+\item 
+void \hyperlink{class_export_mosaic_video_dialog_4c7a3341701c0fb7cf9f3efc5da48fec}{SetupSignalTable} ()
+\item 
+void \hyperlink{class_export_mosaic_video_dialog_984557ee076c770ffe53b37beab0bca6}{SetupVideoTable} ()
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+std::vector$<$ \hyperlink{struct_m_o_s_a_i_c_w_i_n_d_o_w_p_a_r_a_m}{MOSAICWINDOWPARAM} $>$ \hyperlink{class_export_mosaic_video_dialog_a17b3e5b11d7ef44ef236729f02ff9bd}{mvp}
+\item 
+std::vector$<$ \hyperlink{struct_m_o_s_a_i_c_w_i_n_d_o_w_p_a_r_a_m}{MOSAICWINDOWPARAM} $>$ \hyperlink{class_export_mosaic_video_dialog_ae00e678799aa306deb86070a7c1d390}{msp}
+\end{CompactItemize}
+\subsection*{Private Slots}
+\begin{CompactItemize}
+\item 
+void \hyperlink{class_export_mosaic_video_dialog_35e21eb8cc6f392df51488a93c9e965d}{on\_\-pushButton\_\-SetSigalX\_\-clicked} ()
+\item 
+void \hyperlink{class_export_mosaic_video_dialog_b46ef42b32c21388abc835707dc12eab}{on\_\-pushButton\_\-OrganizeVideoVertically\_\-clicked} ()
+\item 
+void \hyperlink{class_export_mosaic_video_dialog_7d7a558b4012d128c2a528a19613286c}{on\_\-pushButton\_\-RenderVideoNone\_\-clicked} ()
+\item 
+void \hyperlink{class_export_mosaic_video_dialog_f1c305660c413aed1c3d657c63da142e}{on\_\-pushButton\_\-RenderVideoAll\_\-clicked} ()
+\item 
+void \hyperlink{class_export_mosaic_video_dialog_e822c4df173336186fe4cb7c3c2b7a05}{on\_\-pushButton\_\-RenderNone\_\-clicked} ()
+\item 
+void \hyperlink{class_export_mosaic_video_dialog_1e4b3629067107b7fab8b7120297b135}{on\_\-pushButton\_\-RenderAll\_\-clicked} ()
+\item 
+void \hyperlink{class_export_mosaic_video_dialog_30a0e8c70938885c365ef622e1a53ca0}{on\_\-pushButton\_\-clicked} ()
+\item 
+void \hyperlink{class_export_mosaic_video_dialog_ee8ffd4f42c57b9ef5519f468a421a8f}{on\_\-pushButton\_\-ApplyAllSignal\_\-clicked} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+Ui::ExportMosaicVideoDialog $\ast$ \hyperlink{class_export_mosaic_video_dialog_e7b48fe3d107daf366acf662a784b584}{m\_\-ui}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_export_mosaic_video_dialog_b82411d35d97e6685b3b5f21b9bcd7da}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{ExportMosaicVideoDialog}]{\setlength{\rightskip}{0pt plus 5cm}ExportMosaicVideoDialog::ExportMosaicVideoDialog (QWidget $\ast$ {\em parent} = {\tt 0})}}
+\label{class_export_mosaic_video_dialog_b82411d35d97e6685b3b5f21b9bcd7da}
+
+
+\hypertarget{class_export_mosaic_video_dialog_0aef55cc90e005b61353bc0aae814a93}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!$\sim$ExportMosaicVideoDialog@{$\sim$ExportMosaicVideoDialog}}
+\index{$\sim$ExportMosaicVideoDialog@{$\sim$ExportMosaicVideoDialog}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{$\sim$ExportMosaicVideoDialog}]{\setlength{\rightskip}{0pt plus 5cm}ExportMosaicVideoDialog::$\sim$ExportMosaicVideoDialog ()}}
+\label{class_export_mosaic_video_dialog_0aef55cc90e005b61353bc0aae814a93}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_export_mosaic_video_dialog_04899feff2347268ac804db6e4312993}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!accept@{accept}}
+\index{accept@{accept}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}void ExportMosaicVideoDialog::accept ()\hspace{0.3cm}{\tt  \mbox{[}virtual, slot\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_04899feff2347268ac804db6e4312993}
+
+
+\hypertarget{class_export_mosaic_video_dialog_029e7404c6e18cc46238ee2296ea7df1}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!changeEvent@{changeEvent}}
+\index{changeEvent@{changeEvent}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{changeEvent}]{\setlength{\rightskip}{0pt plus 5cm}void ExportMosaicVideoDialog::changeEvent (QEvent $\ast$ {\em e})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_029e7404c6e18cc46238ee2296ea7df1}
+
+
+\hypertarget{class_export_mosaic_video_dialog_a359cf31ad2116e398758c844e64e442}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!CheckValues@{CheckValues}}
+\index{CheckValues@{CheckValues}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{CheckValues}]{\setlength{\rightskip}{0pt plus 5cm}bool ExportMosaicVideoDialog::CheckValues ()\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_a359cf31ad2116e398758c844e64e442}
+
+
+Check the signal values in the table for consistency and store them into the data structure \hypertarget{class_export_mosaic_video_dialog_b044f2f53678532e2c048bb697957432}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!CheckVideoValues@{CheckVideoValues}}
+\index{CheckVideoValues@{CheckVideoValues}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{CheckVideoValues}]{\setlength{\rightskip}{0pt plus 5cm}bool ExportMosaicVideoDialog::CheckVideoValues ()\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_b044f2f53678532e2c048bb697957432}
+
+
+Check the signal values in the table for consistency and store them into the data structure \hypertarget{class_export_mosaic_video_dialog_42a99b47c067271c55a492651a1607e9}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!DataOk@{DataOk}}
+\index{DataOk@{DataOk}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{DataOk}]{\setlength{\rightskip}{0pt plus 5cm}bool ExportMosaicVideoDialog::DataOk (QString {\em s}, \/  int \& {\em v})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_42a99b47c067271c55a492651a1607e9}
+
+
+Returns true if the string is an integer $>$=0. \hypertarget{class_export_mosaic_video_dialog_1734cda9e540bf140c1d3b1db5ecb67b}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!GetParam@{GetParam}}
+\index{GetParam@{GetParam}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{GetParam}]{\setlength{\rightskip}{0pt plus 5cm}void ExportMosaicVideoDialog::GetParam (std::vector$<$ {\bf MOSAICWINDOWPARAM} $>$ \& {\em \_\-mvp}, \/  std::vector$<$ {\bf MOSAICWINDOWPARAM} $>$ \& {\em \_\-msp}, \/  int \& {\em bitrate}, \/  int \& {\em gop}, \/  int \& {\em step}, \/  bool \& {\em title}, \/  bool \& {\em plothaxis}, \/  bool \& {\em plotvaxis}, \/  bool \& {\em plotframe}, \/  bool \& {\em transparent}, \/  bool \& {\em centercurrentsample}, \/  bool \& {\em globaldouble})}}
+\label{class_export_mosaic_video_dialog_1734cda9e540bf140c1d3b1db5ecb67b}
+
+
+\hypertarget{class_export_mosaic_video_dialog_ee8ffd4f42c57b9ef5519f468a421a8f}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!on\_\-pushButton\_\-ApplyAllSignal\_\-clicked@{on\_\-pushButton\_\-ApplyAllSignal\_\-clicked}}
+\index{on\_\-pushButton\_\-ApplyAllSignal\_\-clicked@{on\_\-pushButton\_\-ApplyAllSignal\_\-clicked}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{on\_\-pushButton\_\-ApplyAllSignal\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void ExportMosaicVideoDialog::on\_\-pushButton\_\-ApplyAllSignal\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_ee8ffd4f42c57b9ef5519f468a421a8f}
+
+
+\hypertarget{class_export_mosaic_video_dialog_30a0e8c70938885c365ef622e1a53ca0}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!on\_\-pushButton\_\-clicked@{on\_\-pushButton\_\-clicked}}
+\index{on\_\-pushButton\_\-clicked@{on\_\-pushButton\_\-clicked}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{on\_\-pushButton\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void ExportMosaicVideoDialog::on\_\-pushButton\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_30a0e8c70938885c365ef622e1a53ca0}
+
+
+\hypertarget{class_export_mosaic_video_dialog_b46ef42b32c21388abc835707dc12eab}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!on\_\-pushButton\_\-OrganizeVideoVertically\_\-clicked@{on\_\-pushButton\_\-OrganizeVideoVertically\_\-clicked}}
+\index{on\_\-pushButton\_\-OrganizeVideoVertically\_\-clicked@{on\_\-pushButton\_\-OrganizeVideoVertically\_\-clicked}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{on\_\-pushButton\_\-OrganizeVideoVertically\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void ExportMosaicVideoDialog::on\_\-pushButton\_\-OrganizeVideoVertically\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_b46ef42b32c21388abc835707dc12eab}
+
+
+Organize the video vertically \hypertarget{class_export_mosaic_video_dialog_1e4b3629067107b7fab8b7120297b135}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!on\_\-pushButton\_\-RenderAll\_\-clicked@{on\_\-pushButton\_\-RenderAll\_\-clicked}}
+\index{on\_\-pushButton\_\-RenderAll\_\-clicked@{on\_\-pushButton\_\-RenderAll\_\-clicked}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{on\_\-pushButton\_\-RenderAll\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void ExportMosaicVideoDialog::on\_\-pushButton\_\-RenderAll\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_1e4b3629067107b7fab8b7120297b135}
+
+
+Set Render checkbox for all signals \hypertarget{class_export_mosaic_video_dialog_e822c4df173336186fe4cb7c3c2b7a05}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!on\_\-pushButton\_\-RenderNone\_\-clicked@{on\_\-pushButton\_\-RenderNone\_\-clicked}}
+\index{on\_\-pushButton\_\-RenderNone\_\-clicked@{on\_\-pushButton\_\-RenderNone\_\-clicked}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{on\_\-pushButton\_\-RenderNone\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void ExportMosaicVideoDialog::on\_\-pushButton\_\-RenderNone\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_e822c4df173336186fe4cb7c3c2b7a05}
+
+
+Clear Render checkbox for all signals \hypertarget{class_export_mosaic_video_dialog_f1c305660c413aed1c3d657c63da142e}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!on\_\-pushButton\_\-RenderVideoAll\_\-clicked@{on\_\-pushButton\_\-RenderVideoAll\_\-clicked}}
+\index{on\_\-pushButton\_\-RenderVideoAll\_\-clicked@{on\_\-pushButton\_\-RenderVideoAll\_\-clicked}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{on\_\-pushButton\_\-RenderVideoAll\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void ExportMosaicVideoDialog::on\_\-pushButton\_\-RenderVideoAll\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_f1c305660c413aed1c3d657c63da142e}
+
+
+Set Render checkbox for all videos \hypertarget{class_export_mosaic_video_dialog_7d7a558b4012d128c2a528a19613286c}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!on\_\-pushButton\_\-RenderVideoNone\_\-clicked@{on\_\-pushButton\_\-RenderVideoNone\_\-clicked}}
+\index{on\_\-pushButton\_\-RenderVideoNone\_\-clicked@{on\_\-pushButton\_\-RenderVideoNone\_\-clicked}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{on\_\-pushButton\_\-RenderVideoNone\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void ExportMosaicVideoDialog::on\_\-pushButton\_\-RenderVideoNone\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_7d7a558b4012d128c2a528a19613286c}
+
+
+Clear Render checkbox for all videos \hypertarget{class_export_mosaic_video_dialog_35e21eb8cc6f392df51488a93c9e965d}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!on\_\-pushButton\_\-SetSigalX\_\-clicked@{on\_\-pushButton\_\-SetSigalX\_\-clicked}}
+\index{on\_\-pushButton\_\-SetSigalX\_\-clicked@{on\_\-pushButton\_\-SetSigalX\_\-clicked}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{on\_\-pushButton\_\-SetSigalX\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void ExportMosaicVideoDialog::on\_\-pushButton\_\-SetSigalX\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_35e21eb8cc6f392df51488a93c9e965d}
+
+
+Set all the signal X value to: \hypertarget{class_export_mosaic_video_dialog_90a280c0cc8cd6edbd5ce811ebaf76a7}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!SetParam@{SetParam}}
+\index{SetParam@{SetParam}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{SetParam}]{\setlength{\rightskip}{0pt plus 5cm}void ExportMosaicVideoDialog::SetParam (std::vector$<$ {\bf MOSAICWINDOWPARAM} $>$ {\em \_\-mvp}, \/  std::vector$<$ {\bf MOSAICWINDOWPARAM} $>$ {\em \_\-msp})}}
+\label{class_export_mosaic_video_dialog_90a280c0cc8cd6edbd5ce811ebaf76a7}
+
+
+\hypertarget{class_export_mosaic_video_dialog_4c7a3341701c0fb7cf9f3efc5da48fec}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!SetupSignalTable@{SetupSignalTable}}
+\index{SetupSignalTable@{SetupSignalTable}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{SetupSignalTable}]{\setlength{\rightskip}{0pt plus 5cm}void ExportMosaicVideoDialog::SetupSignalTable ()\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_4c7a3341701c0fb7cf9f3efc5da48fec}
+
+
+\hypertarget{class_export_mosaic_video_dialog_984557ee076c770ffe53b37beab0bca6}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!SetupVideoTable@{SetupVideoTable}}
+\index{SetupVideoTable@{SetupVideoTable}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{SetupVideoTable}]{\setlength{\rightskip}{0pt plus 5cm}void ExportMosaicVideoDialog::SetupVideoTable ()\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_984557ee076c770ffe53b37beab0bca6}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_export_mosaic_video_dialog_e7b48fe3d107daf366acf662a784b584}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!m\_\-ui@{m\_\-ui}}
+\index{m\_\-ui@{m\_\-ui}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{m\_\-ui}]{\setlength{\rightskip}{0pt plus 5cm}Ui::ExportMosaicVideoDialog$\ast$ {\bf ExportMosaicVideoDialog::m\_\-ui}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_e7b48fe3d107daf366acf662a784b584}
+
+
+\hypertarget{class_export_mosaic_video_dialog_ae00e678799aa306deb86070a7c1d390}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!msp@{msp}}
+\index{msp@{msp}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{msp}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf MOSAICWINDOWPARAM}$>$ {\bf ExportMosaicVideoDialog::msp}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_ae00e678799aa306deb86070a7c1d390}
+
+
+\hypertarget{class_export_mosaic_video_dialog_a17b3e5b11d7ef44ef236729f02ff9bd}{
+\index{ExportMosaicVideoDialog@{ExportMosaicVideoDialog}!mvp@{mvp}}
+\index{mvp@{mvp}!ExportMosaicVideoDialog@{ExportMosaicVideoDialog}}
+\subsubsection[{mvp}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf MOSAICWINDOWPARAM}$>$ {\bf ExportMosaicVideoDialog::mvp}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{class_export_mosaic_video_dialog_a17b3e5b11d7ef44ef236729f02ff9bd}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{exportmosaicvideodialog_8h}{exportmosaicvideodialog.h}\item 
+\hyperlink{exportmosaicvideodialog_8cpp}{exportmosaicvideodialog.cpp}\end{CompactItemize}

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>610</width>
+    <height>503</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>SynScopeV</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/icon2.bmp</normaloff>:/icon2.bmp</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QTextEdit" name="lineEdit_Source">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="tabChangesFocus">
+         <bool>true</bool>
+        </property>
+        <property name="acceptRichText">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_LoadSource">
+        <property name="text">
+         <string>Load sources</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QTextEdit" name="lineEdit_View">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="tabChangesFocus">
+         <bool>true</bool>
+        </property>
+        <property name="acceptRichText">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_ApplyView">
+        <property name="text">
+         <string>Apply view</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>610</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionLoad_configuration"/>
+    <addaction name="actionSave_configuration"/>
+    <addaction name="actionSet_working_directory"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Tools">
+    <property name="title">
+     <string>&amp;Resample</string>
+    </property>
+    <addaction name="action_Resample"/>
+    <addaction name="actionUndo"/>
+    <addaction name="separator"/>
+    <addaction name="actionExport_Matlab_resample_code"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionHow_to"/>
+    <addaction name="actionAbout_Q"/>
+   </widget>
+   <widget class="QMenu" name="menuSource">
+    <property name="title">
+     <string>&amp;Source</string>
+    </property>
+    <addaction name="actionShow_available_sources"/>
+    <addaction name="actionSave_primary_source"/>
+    <addaction name="actionMerge_linked_files"/>
+   </widget>
+   <widget class="QMenu" name="menuReferences_Links">
+    <property name="title">
+     <string>&amp;Links</string>
+    </property>
+    <widget class="QMenu" name="menuExport_link_equations_2">
+     <property name="title">
+      <string>Export link equations</string>
+     </property>
+     <addaction name="actionMatrix"/>
+     <addaction name="actionText"/>
+    </widget>
+    <addaction name="actionShow_reference_points_and_links"/>
+    <addaction name="actionAdd_reference_point"/>
+    <addaction name="actionClear_reference_points"/>
+    <addaction name="separator"/>
+    <addaction name="actionLoad_reference_points"/>
+    <addaction name="actionSave_reference_points"/>
+    <addaction name="separator"/>
+    <addaction name="menuExport_link_equations_2"/>
+   </widget>
+   <widget class="QMenu" name="menuVideo_export">
+    <property name="title">
+     <string>&amp;Video export</string>
+    </property>
+    <addaction name="actionSelected_view"/>
+    <addaction name="actionVideo_of_all_signal_sources"/>
+    <addaction name="actionMosaic_video"/>
+   </widget>
+   <widget class="QMenu" name="menuFocus">
+    <property name="title">
+     <string>focus</string>
+    </property>
+    <addaction name="actionFocus"/>
+    <addaction name="actionSdfsdfsd"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menuSource"/>
+   <addaction name="menuReferences_Links"/>
+   <addaction name="menu_Tools"/>
+   <addaction name="menuVideo_export"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menuFocus"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_Resample">
+   <property name="text">
+    <string>&amp;Resample linked signals...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionLoad_configuration">
+   <property name="text">
+    <string>&amp;Load configuration...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionSave_configuration">
+   <property name="text">
+    <string>&amp;Save configuration...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionExport_Matlab_resample_code">
+   <property name="text">
+    <string>Export Matlab resample code...</string>
+   </property>
+  </action>
+  <action name="actionText">
+   <property name="text">
+    <string>As text...</string>
+   </property>
+  </action>
+  <action name="actionMatrix">
+   <property name="text">
+    <string>As matrix...</string>
+   </property>
+  </action>
+  <action name="actionLoad_reference_points">
+   <property name="text">
+    <string>Load reference points...</string>
+   </property>
+  </action>
+  <action name="actionShow_available_sources">
+   <property name="text">
+    <string>Show available sources...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionAbout_Q">
+   <property name="text">
+    <string>About QT...</string>
+   </property>
+  </action>
+  <action name="actionSave_primary_source">
+   <property name="text">
+    <string>Save primary source...</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo resample</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionHow_to">
+   <property name="text">
+    <string>&amp;How to...</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;About...</string>
+   </property>
+  </action>
+  <action name="actionMerge_linked_files">
+   <property name="text">
+    <string>Merge and save sources..</string>
+   </property>
+  </action>
+  <action name="actionSave_reference_points">
+   <property name="text">
+    <string>Save reference points...</string>
+   </property>
+  </action>
+  <action name="actionShow_reference_points_and_links">
+   <property name="text">
+    <string>Edit reference points and links...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionAdd_reference_point">
+   <property name="text">
+    <string>Add reference point</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl++</string>
+   </property>
+  </action>
+  <action name="actionRemove_reference_point">
+   <property name="text">
+    <string>Remove reference point</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+  <action name="actionClear_reference_points">
+   <property name="text">
+    <string>Clear reference points</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionSet_working_directory">
+   <property name="text">
+    <string>Set working directory...</string>
+   </property>
+  </action>
+  <action name="action_Quit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="actionVideo_from_primary_source">
+   <property name="text">
+    <string>Selected signal...</string>
+   </property>
+  </action>
+  <action name="actionVideo_of_all_signal_sources">
+   <property name="text">
+    <string>All signal sources...</string>
+   </property>
+  </action>
+  <action name="actionMosaic_video">
+   <property name="text">
+    <string>Mosaic of signals (linked to primary)...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionTest1">
+   <property name="text">
+    <string>Test1</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionTest2">
+   <property name="text">
+    <string>Test2</string>
+   </property>
+  </action>
+  <action name="actionTest3">
+   <property name="text">
+    <string>Test3</string>
+   </property>
+  </action>
+  <action name="actionFocus">
+   <property name="text">
+    <string>focus</string>
+   </property>
+  </action>
+  <action name="actionSdfsdfsd">
+   <property name="text">
+    <string>sdfsdfsd</string>
+   </property>
+  </action>
+  <action name="actionSelected_view">
+   <property name="text">
+    <string>Selected view...</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

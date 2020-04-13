@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Main Source="&lt;signal;..\qtkinectwrapper\kinect.dat&gt;&lt;video;..\qtkinectwrapper\kinect.avi&gt;" View="&lt;scope;0;CoM;6 7 8;color=ff4040 40ff40 4040ff&gt;&lt;scope;0;Left hand;35 36 37;color=ff4040 40ff40 4040ff&gt;&lt;scope;0;Right hand;53 54 55;color=ff4040 40ff40 4040ff&gt;&lt;scatter;0;Hands vertical plane;36 37 54 55;color=ff0000 00ff00&gt;&lt;scatter;0;Hands horizontal plane;35 36 53 54;color=ff0000 00ff00&gt;"/>
+    <References>
+        <ReferenceData source1="0" position1="8640" source2="1" position2="260"/>
+        <ReferenceData source1="0" position1="18952" source2="1" position2="568"/>
+    </References>
+</Configuration>

@@ -1,0 +1,3 @@
+- When adding a stickman and playing the video, the video briefly flickers backwards when the linked signals (the linked stickman) is updated.
+Likely linked to the programmatic update of the stickman which creates a scroll event.
+

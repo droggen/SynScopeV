@@ -1,0 +1,167 @@
+\hypertarget{class_save_sync_file_dialog}{
+\section{SaveSyncFileDialog Class Reference}
+\label{class_save_sync_file_dialog}\index{SaveSyncFileDialog@{SaveSyncFileDialog}}
+}
+{\tt \#include $<$savesyncfiledialog.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_save_sync_file_dialog_4f2afe785fab484ced94a0b9e1518690}{SaveSyncFileDialog} (QWidget $\ast$parent=0)
+\item 
+\hyperlink{class_save_sync_file_dialog_3e0469e66efab7874faa2ca9b84803e4}{$\sim$SaveSyncFileDialog} ()
+\item 
+void \hyperlink{class_save_sync_file_dialog_323d6d3c60360e40871f961d000a7940}{SetGraphs} (\hyperlink{savesyncfiledialog_8h_dc4594b144e880a867b5efe7979e0d35}{GRAPHSRC} g)
+\item 
+\hyperlink{savesyncfiledialog_8h_dc4594b144e880a867b5efe7979e0d35}{GRAPHSRC} \hyperlink{class_save_sync_file_dialog_a5eee73fcd8018437417415ab21fec54}{GetSaveOrder} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{class_save_sync_file_dialog_7e101b5c3d58be37c8c23a3a193d4bf7}{changeEvent} (QEvent $\ast$e)
+\end{CompactItemize}
+\subsection*{Private Slots}
+\begin{CompactItemize}
+\item 
+void \hyperlink{class_save_sync_file_dialog_1266fb9559a260bd06123a8f9d057c71}{on\_\-pushButton\_\-2\_\-clicked} ()
+\begin{CompactList}\small\item\em Save all the linked graphs. \item\end{CompactList}\item 
+void \hyperlink{class_save_sync_file_dialog_5e3b844df3fe3b657e3fac9b590a690c}{on\_\-pushButton\_\-clicked} ()
+\begin{CompactList}\small\item\em Save the selected linked graph. \item\end{CompactList}\item 
+void \hyperlink{class_save_sync_file_dialog_d2c4963b1665d3c34636934a2d3260c9}{on\_\-pushButton\_\-3\_\-clicked} ()
+\begin{CompactList}\small\item\em Close without saving. \item\end{CompactList}\item 
+void \hyperlink{class_save_sync_file_dialog_ac104e51524129c824ab1d30b8ae9e14}{on\_\-pushButton\_\-Down\_\-clicked} ()
+\item 
+void \hyperlink{class_save_sync_file_dialog_1cb3cdad261dd621d2d1e1d3a538fefb}{on\_\-pushButton\_\-Up\_\-clicked} ()
+\item 
+void \hyperlink{class_save_sync_file_dialog_d9d1632dcbc20ea628be9646e42a6d39}{on\_\-listWidget\_\-Sources\_\-currentRowChanged} (int currentRow)
+\begin{CompactList}\small\item\em handles selection of a row in the graphs list box. Updates the oder-of-storage list box \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+Ui::SaveSyncFileDialog $\ast$ \hyperlink{class_save_sync_file_dialog_b95314c8667bb468a1edc52b3354057c}{m\_\-ui}
+\item 
+\hyperlink{savesyncfiledialog_8h_dc4594b144e880a867b5efe7979e0d35}{GRAPHSRC} \hyperlink{class_save_sync_file_dialog_3f2d0e497574670ff938db7db4490fe5}{GraphSrc}
+\item 
+\hyperlink{savesyncfiledialog_8h_dc4594b144e880a867b5efe7979e0d35}{GRAPHSRC} \hyperlink{class_save_sync_file_dialog_218cd59731116b00fefe8cd057a77747}{GraphToSave}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_save_sync_file_dialog_4f2afe785fab484ced94a0b9e1518690}{
+\index{SaveSyncFileDialog@{SaveSyncFileDialog}!SaveSyncFileDialog@{SaveSyncFileDialog}}
+\index{SaveSyncFileDialog@{SaveSyncFileDialog}!SaveSyncFileDialog@{SaveSyncFileDialog}}
+\subsubsection[{SaveSyncFileDialog}]{\setlength{\rightskip}{0pt plus 5cm}SaveSyncFileDialog::SaveSyncFileDialog (QWidget $\ast$ {\em parent} = {\tt 0})}}
+\label{class_save_sync_file_dialog_4f2afe785fab484ced94a0b9e1518690}
+
+
+\hypertarget{class_save_sync_file_dialog_3e0469e66efab7874faa2ca9b84803e4}{
+\index{SaveSyncFileDialog@{SaveSyncFileDialog}!$\sim$SaveSyncFileDialog@{$\sim$SaveSyncFileDialog}}
+\index{$\sim$SaveSyncFileDialog@{$\sim$SaveSyncFileDialog}!SaveSyncFileDialog@{SaveSyncFileDialog}}
+\subsubsection[{$\sim$SaveSyncFileDialog}]{\setlength{\rightskip}{0pt plus 5cm}SaveSyncFileDialog::$\sim$SaveSyncFileDialog ()}}
+\label{class_save_sync_file_dialog_3e0469e66efab7874faa2ca9b84803e4}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_save_sync_file_dialog_7e101b5c3d58be37c8c23a3a193d4bf7}{
+\index{SaveSyncFileDialog@{SaveSyncFileDialog}!changeEvent@{changeEvent}}
+\index{changeEvent@{changeEvent}!SaveSyncFileDialog@{SaveSyncFileDialog}}
+\subsubsection[{changeEvent}]{\setlength{\rightskip}{0pt plus 5cm}void SaveSyncFileDialog::changeEvent (QEvent $\ast$ {\em e})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{class_save_sync_file_dialog_7e101b5c3d58be37c8c23a3a193d4bf7}
+
+
+\hypertarget{class_save_sync_file_dialog_a5eee73fcd8018437417415ab21fec54}{
+\index{SaveSyncFileDialog@{SaveSyncFileDialog}!GetSaveOrder@{GetSaveOrder}}
+\index{GetSaveOrder@{GetSaveOrder}!SaveSyncFileDialog@{SaveSyncFileDialog}}
+\subsubsection[{GetSaveOrder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf GRAPHSRC} SaveSyncFileDialog::GetSaveOrder ()}}
+\label{class_save_sync_file_dialog_a5eee73fcd8018437417415ab21fec54}
+
+
+\hypertarget{class_save_sync_file_dialog_d9d1632dcbc20ea628be9646e42a6d39}{
+\index{SaveSyncFileDialog@{SaveSyncFileDialog}!on\_\-listWidget\_\-Sources\_\-currentRowChanged@{on\_\-listWidget\_\-Sources\_\-currentRowChanged}}
+\index{on\_\-listWidget\_\-Sources\_\-currentRowChanged@{on\_\-listWidget\_\-Sources\_\-currentRowChanged}!SaveSyncFileDialog@{SaveSyncFileDialog}}
+\subsubsection[{on\_\-listWidget\_\-Sources\_\-currentRowChanged}]{\setlength{\rightskip}{0pt plus 5cm}void SaveSyncFileDialog::on\_\-listWidget\_\-Sources\_\-currentRowChanged (int {\em currentRow})\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_save_sync_file_dialog_d9d1632dcbc20ea628be9646e42a6d39}
+
+
+handles selection of a row in the graphs list box. Updates the oder-of-storage list box 
+
+\hypertarget{class_save_sync_file_dialog_1266fb9559a260bd06123a8f9d057c71}{
+\index{SaveSyncFileDialog@{SaveSyncFileDialog}!on\_\-pushButton\_\-2\_\-clicked@{on\_\-pushButton\_\-2\_\-clicked}}
+\index{on\_\-pushButton\_\-2\_\-clicked@{on\_\-pushButton\_\-2\_\-clicked}!SaveSyncFileDialog@{SaveSyncFileDialog}}
+\subsubsection[{on\_\-pushButton\_\-2\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void SaveSyncFileDialog::on\_\-pushButton\_\-2\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_save_sync_file_dialog_1266fb9559a260bd06123a8f9d057c71}
+
+
+Save all the linked graphs. 
+
+\hypertarget{class_save_sync_file_dialog_d2c4963b1665d3c34636934a2d3260c9}{
+\index{SaveSyncFileDialog@{SaveSyncFileDialog}!on\_\-pushButton\_\-3\_\-clicked@{on\_\-pushButton\_\-3\_\-clicked}}
+\index{on\_\-pushButton\_\-3\_\-clicked@{on\_\-pushButton\_\-3\_\-clicked}!SaveSyncFileDialog@{SaveSyncFileDialog}}
+\subsubsection[{on\_\-pushButton\_\-3\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void SaveSyncFileDialog::on\_\-pushButton\_\-3\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_save_sync_file_dialog_d2c4963b1665d3c34636934a2d3260c9}
+
+
+Close without saving. 
+
+\hypertarget{class_save_sync_file_dialog_5e3b844df3fe3b657e3fac9b590a690c}{
+\index{SaveSyncFileDialog@{SaveSyncFileDialog}!on\_\-pushButton\_\-clicked@{on\_\-pushButton\_\-clicked}}
+\index{on\_\-pushButton\_\-clicked@{on\_\-pushButton\_\-clicked}!SaveSyncFileDialog@{SaveSyncFileDialog}}
+\subsubsection[{on\_\-pushButton\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void SaveSyncFileDialog::on\_\-pushButton\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_save_sync_file_dialog_5e3b844df3fe3b657e3fac9b590a690c}
+
+
+Save the selected linked graph. 
+
+\hypertarget{class_save_sync_file_dialog_ac104e51524129c824ab1d30b8ae9e14}{
+\index{SaveSyncFileDialog@{SaveSyncFileDialog}!on\_\-pushButton\_\-Down\_\-clicked@{on\_\-pushButton\_\-Down\_\-clicked}}
+\index{on\_\-pushButton\_\-Down\_\-clicked@{on\_\-pushButton\_\-Down\_\-clicked}!SaveSyncFileDialog@{SaveSyncFileDialog}}
+\subsubsection[{on\_\-pushButton\_\-Down\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void SaveSyncFileDialog::on\_\-pushButton\_\-Down\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_save_sync_file_dialog_ac104e51524129c824ab1d30b8ae9e14}
+
+
+\hypertarget{class_save_sync_file_dialog_1cb3cdad261dd621d2d1e1d3a538fefb}{
+\index{SaveSyncFileDialog@{SaveSyncFileDialog}!on\_\-pushButton\_\-Up\_\-clicked@{on\_\-pushButton\_\-Up\_\-clicked}}
+\index{on\_\-pushButton\_\-Up\_\-clicked@{on\_\-pushButton\_\-Up\_\-clicked}!SaveSyncFileDialog@{SaveSyncFileDialog}}
+\subsubsection[{on\_\-pushButton\_\-Up\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void SaveSyncFileDialog::on\_\-pushButton\_\-Up\_\-clicked ()\hspace{0.3cm}{\tt  \mbox{[}private, slot\mbox{]}}}}
+\label{class_save_sync_file_dialog_1cb3cdad261dd621d2d1e1d3a538fefb}
+
+
+\hypertarget{class_save_sync_file_dialog_323d6d3c60360e40871f961d000a7940}{
+\index{SaveSyncFileDialog@{SaveSyncFileDialog}!SetGraphs@{SetGraphs}}
+\index{SetGraphs@{SetGraphs}!SaveSyncFileDialog@{SaveSyncFileDialog}}
+\subsubsection[{SetGraphs}]{\setlength{\rightskip}{0pt plus 5cm}void SaveSyncFileDialog::SetGraphs ({\bf GRAPHSRC} {\em g})}}
+\label{class_save_sync_file_dialog_323d6d3c60360e40871f961d000a7940}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_save_sync_file_dialog_3f2d0e497574670ff938db7db4490fe5}{
+\index{SaveSyncFileDialog@{SaveSyncFileDialog}!GraphSrc@{GraphSrc}}
+\index{GraphSrc@{GraphSrc}!SaveSyncFileDialog@{SaveSyncFileDialog}}
+\subsubsection[{GraphSrc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf GRAPHSRC} {\bf SaveSyncFileDialog::GraphSrc}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{class_save_sync_file_dialog_3f2d0e497574670ff938db7db4490fe5}
+
+
+\hypertarget{class_save_sync_file_dialog_218cd59731116b00fefe8cd057a77747}{
+\index{SaveSyncFileDialog@{SaveSyncFileDialog}!GraphToSave@{GraphToSave}}
+\index{GraphToSave@{GraphToSave}!SaveSyncFileDialog@{SaveSyncFileDialog}}
+\subsubsection[{GraphToSave}]{\setlength{\rightskip}{0pt plus 5cm}{\bf GRAPHSRC} {\bf SaveSyncFileDialog::GraphToSave}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{class_save_sync_file_dialog_218cd59731116b00fefe8cd057a77747}
+
+
+\hypertarget{class_save_sync_file_dialog_b95314c8667bb468a1edc52b3354057c}{
+\index{SaveSyncFileDialog@{SaveSyncFileDialog}!m\_\-ui@{m\_\-ui}}
+\index{m\_\-ui@{m\_\-ui}!SaveSyncFileDialog@{SaveSyncFileDialog}}
+\subsubsection[{m\_\-ui}]{\setlength{\rightskip}{0pt plus 5cm}Ui::SaveSyncFileDialog$\ast$ {\bf SaveSyncFileDialog::m\_\-ui}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{class_save_sync_file_dialog_b95314c8667bb468a1edc52b3354057c}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{savesyncfiledialog_8h}{savesyncfiledialog.h}\item 
+\hyperlink{savesyncfiledialog_8cpp}{savesyncfiledialog.cpp}\end{CompactItemize}

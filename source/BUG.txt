@@ -1,0 +1,7 @@
+- When adding a stickman and playing the video, the video briefly flickers backwards when the linked signals (the linked stickman) is updated.
+Likely linked to the programmatic update of the stickman which creates a scroll event.
+
+
+- When putting a scope yscale of small value (1, 10) (or maybe of any value), the actual yscale is ~2 orders of magnitude higher...
+
+

@@ -1,0 +1,243 @@
+<h3 align="center">SynScopeV - Signal/Video Visualization and Alignment Tool</h3>
+
+
+<h4>Purpose</h4>
+
+<p>
+SynScopeV is an offline visualization and alignment tool for time-varying signals and videos.
+SynScopeV supports multiple signal sources that may differ in offset and/or sample rate, as well as multiple videos sources.
+</p>
+<p>
+SynScopeV's main purpose is to support the interactive alignment of signals, and the alignment of signals with video footages.
+</p>
+<p>
+SynScopeV offers resampling functionalities to merge aligned signals, as well as several options to export relations between signals and videos for further processing in other tools.
+</p>
+
+<h4>Details</h4>
+<p>
+SynScopeV allows to define reference points that correspond to identical events between source pairs. It then estimates the offset and resample rate to <i>link</i> these sources. I.e., it maps sample time from one source to the other via a link equation.
+</p>
+
+<p>
+Sources include signals and videos. Reference points (links) can be freely defined between signals, between videos, and between signals and videos. 
+</p>
+
+<p>
+Source alignment can be inspected with (i) synchronous visualization or (ii) resampling.<BR>
+(i) Synchronous visualization: linked sources (signals and videos) scroll together according to the link relation.<BR>
+(ii) Resampling: linked signals are resampled to the highest sample rate and offset-compensated.
+</p>
+
+<p>
+Resampled signals can be merged in a single file. Reference points and link relations can be exported for use in other programs.
+</p>
+
+<p>
+A typical usage example is the inspection of data recorded from multiple sensors aquired on different systems, together with (optional) video footage.
+</p>
+
+<h4>Key features</h4>
+<ul>
+<li>Multiple signal sources
+</li>
+<li>Multiple channels per sources
+</li>
+<li>Multiple, configurable, views of the sources
+</li>
+<li>Multiple video sources
+</li>
+<li>Navigation through signal waveform (scroll, zoom, etc.)
+</li>
+<li>Navigation through the videos
+</li>
+<li>Interactive specification of the reference points between source pairs
+</li>
+<li>Automatic estimation from the reference points of offset and resample factor between pairs of sources (source linking).
+</li>
+<li>Configurable activation of links between signal sources
+</li>
+<li>Synchronized visualization of linked sources; linked signals/videos scroll jointly according to the link equation
+</li>
+<li>Resampling of linked signals (builtin and with Matlab support)
+</li>
+<li>Merge and save resampled signals
+</li>
+</ul>
+
+ 
+<h4>Typical usage pattern</h4>
+A typical workflow comprises the following steps:
+<ol>
+  <li><b>Data sources set-up:</b> the files containing the signal sources and the videos are specified in the signal source box and loaded. See sections <a href="#source">setting-up data sources</a> and <a href="#format">file format</a>.
+  </li>
+  <li><b>Views set-up:</b> multiple views into the signal sources are configured. See section <a href="#view">setting-up views</a>.
+  </li>
+  <li><b>Visual inspection:</b> see section <a href="#ui">user-interface</a>.
+  </li>
+  <li><b>Set-up reference points:</b> points corresponding to identical events in the different sources can be identified and stored. See section <a href="#ref">reference points and links</a>.
+  </li>
+  <li><b>Visual inspection, resample:</b> signal sources can be synchronously visualized, or resampled, to make sure they are correctly aligned. Reference points can be added or removed if needed. See section <a href="#ref">reference points and links</a>.
+  </li>
+  <li><b>Resample and merge:</b> once the reference points allow a satisfying alignment the signals can be resampled and merged in a single file, or the reference points and link equations can be exported to use in another program. See section <a href="#resample">Resample</a>.
+  </li>
+</ol>
+
+<h4><a name="source"></a>Setting-up data sources</h4>
+<p>
+Data sources are specified with the following syntax:
+</p> 
+<p><i>&lt;signal;/path/to/source/file1&gt;&lt;signal;/path/to/source/file2&gt;&lt;video;/path/to/video1&gt;...</i></p>
+
+<p>
+Signal/video sources are loaded by clicking on the <i>Load sources</i> button.
+</p>
+<p>
+When setting up the views, the signal sources are referenced by their number. The first source (file 1) is source 0, etc.
+</p>
+
+<h4><a name="view"></a>Setting-up views</h4>
+<p>
+Views into the signals are specified by a display format string. 
+It indicates how many scopes are on screen and which signal source and channels they show.
+</p>
+
+The views are specified with the following syntax:<BR>
+
+<i>&lt;viewtype;source#;title;[viewtype specific parameters]&gt;&lt;......</i>
+<ul>
+<li>viewtype: type of visualization. Currently one of: scope, scatter, stickman, label.</li>
+<li>source#: source number. Source 0 is the first signal source specified in the data source set-up.</li>
+<li>title: title of the scope</li>
+</ul>
+
+See below for the viewtype specific parameters.
+
+
+<h4><a name="ref">Viewtypes and viewtypes pameters</a></h4>
+
+The various view types have different parameters.
+
+<h5>Viewtype scatter</h5>
+<p>
+The format of the scatter  definition is:
+</p>
+<i>scatter ; sourcenum ; title ; tracex1 tracey1 tracex2 tracey2 ... [; scale=xmin ymin xmax ymax] [;color=rrggbb rrggbb ...] [;points=numpoints]</i>
+
+<h5>Viewtype scope</h5>
+<p>
+The format of the scope definition is:
+</p>
+<i>scope ; sourcenum ; title ; trace1 trace2 ... [;xscale = xs] [;yscale=<auto|ymin ymax>][;color=rrggbb rrggbb ...]</i>
+
+<ul>
+<li>trace<i>i</i>: space separated list of traces to display (0=first trace of the source,...)</li>
+<li>xscale: horizontal scale. 1=default. Positive value: zoom in. Negative value: zoomout</li>
+<li>yscale: vertical scale. automatic (auto) or manual (min max)</li>
+<li>colors: space separated list of trace colors in hexadecimal format RRGGBB (default: white)</li>
+</ul>
+
+<p>As an example, consider the following display format string:</p>
+<i>
+&lt;scope;0;Calibrated;5 6 7;xscale=1;yscale=-3300 3300 ;color=ff0000 ff00 ff&gt;
+&lt;2;Raw;2 3 4;xscale=-2;yscale=auto&gt;
+</i>
+
+<p>
+It defines two scopes.
+The first shows channels number 5, 6 and 7 of source 0, in red, green and blue respectively, with manual vertical scale, default horizontal scale, and the title Calibrated.
+The second shows channels number 2, 3 and 4 of source 2, with automatic vertical scale, zoom out 2x on the horizontal scale.
+</p>
+
+
+<h5>Viewtype stickman</h5>
+<p>
+The format of the stickman  definition is:
+</p>
+<i>stickman ; sourcenum ; title ; torso_q0 torso_q1 torso_q2 torso_q3 rua_q0 rua_q1 rua_q2 rua_q3 rla_q0 rla_q1 rla_q2 rla_q3 lua_q0 lua_q1 lua_q2 lua_q3 lla_q0 lla_q1 lla_q2 lla_q3</i>
+
+<h5>Viewtype label</h5>
+<p>
+The format of the label definition is:
+</p>
+<i>label ; sourcenum ; title ; trace1 trace2 ... [;xscale = xs][;yscale=<auto|ymin ymax>][;color=rrggbb rrggbb ...][;title=title1 title2 ....]</i>
+
+
+<p>
+<b><i>Documentation to complete </i></b>
+</p>
+
+
+<h4><a name="ref">Reference points and links</a></h4>
+
+<p>
+Reference points are specified between a <i>primary</i> and a <i>secondary</i> source.
+</p>
+
+<p>
+Primary and secondary sources are selected by right-clicking in the scopes or in the video. Scopes/videos are highlighted according to their primary/secondary status.
+The reference point of a scope is the center point. The reference point of a video is the currently visible frame.
+</p>
+
+
+<p>
+Left-clicking in a scope centers the scope on the cursor position. 
+</p>
+Reference points are added from the menu (Links/Add reference points) or from the reference point window (Link/Edit reference points and links). 
+The reference point window allows to edit (add, delete, clear) the reference points, and shows the link equation between the sources.
+</p>
+
+
+<p>
+A minimum of two reference points is required to define a link equation between two sources. With more reference points, a best fit between the reference points is computed. 
+</p>
+
+
+<p>
+Links between signals can be activated when enough reference points are specified from the Links/Edit reference points and links window.
+</p>
+
+
+
+<h4><a name="resample">Resample</a></h4>
+
+<p>
+Linked signals can be resampled to identical frequency and offset-compensated (Resample/Resample linked signals). 
+After resampling, all the linked signals have the same number of sample, and are linked by an identity relation.
+</p>
+
+<p>
+Resampled signals can be merged into a single file (Source/Merge and save sources).
+</p>
+
+
+
+
+
+<h4><a name="ui">User interface</a></h4>
+Scopes be scaled, scrolled, etc, as follows:
+
+<ul>
+  <li>Left click: center the scope on the mouse position</li>
+  <li>Right click: sets the primary/secondary status of the scope</li>
+  <li>Wheel up/down: vertical zoom</li>
+  <li>Middle click: automatic vertical scale</li>
+  <li>Shift+wheel up/down: horizontal zoom</li>
+  <li>Shift+middle click: default horizontal scale</li>
+</ul>
+
+<h4><a name="format">File format</a></h4>
+
+Source files are text files, with one line per sample, and one column per channel. Channels are space or tab delimited.
+Sample values must be integers.
+
+
+<h4>Limitations</h4>
+<ul>
+  <li>Sources data must be integer values. Maximal integer values are
+slightly below 2^24.</li>
+</ul>
+
+<h4>License</h4>
+
+This software is licensed under the terms of the GPL v.2 license.

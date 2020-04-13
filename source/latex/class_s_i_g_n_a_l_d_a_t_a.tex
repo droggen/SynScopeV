@@ -1,0 +1,90 @@
+\hypertarget{class_s_i_g_n_a_l_d_a_t_a}{
+\section{SIGNALDATA Class Reference}
+\label{class_s_i_g_n_a_l_d_a_t_a}\index{SIGNALDATA@{SIGNALDATA}}
+}
+{\tt \#include $<$data.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_s_i_g_n_a_l_d_a_t_a_363c71c74fc75874e1155c8872002ec7}{SIGNALDATA} ()
+\item 
+\hyperlink{data_8h_fc86256a7f121caf21919387c9a373c7}{TRACERI} \hyperlink{class_s_i_g_n_a_l_d_a_t_a_4b9e7478c234c6ced9b9a7d63c91c092}{getRef} (unsigned channel)
+\item 
+\hyperlink{data_8h_cbba0387203ed452657771b112721cd1}{TRACESRI} \hyperlink{class_s_i_g_n_a_l_d_a_t_a_ebd15e42c0384ffc5c4a74d317228145}{getRef} (const std::vector$<$ unsigned $>$ \&channels)
+\item 
+\hyperlink{data_8h_cbba0387203ed452657771b112721cd1}{TRACESRI} \hyperlink{class_s_i_g_n_a_l_d_a_t_a_ac54d48e555a7b8a7e12c927cc90f311}{getRef} (const std::vector$<$ unsigned $>$ \&channels, std::vector$<$ unsigned $>$ \&channelspruned)
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+std::vector$<$ \hyperlink{data_8h_63718d7c87eed943a40655be0dd70210}{TRACEI} $>$ \hyperlink{class_s_i_g_n_a_l_d_a_t_a_3731f410a1aeed974914860ddd089eeb}{data}
+\item 
+int \hyperlink{class_s_i_g_n_a_l_d_a_t_a_02abe023620a84cd4cdee2f6b7e7e989}{centersample}
+\item 
+QString \hyperlink{class_s_i_g_n_a_l_d_a_t_a_3e0058672e5c14f24c2502eb2c0b46f0}{filename}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_s_i_g_n_a_l_d_a_t_a_363c71c74fc75874e1155c8872002ec7}{
+\index{SIGNALDATA@{SIGNALDATA}!SIGNALDATA@{SIGNALDATA}}
+\index{SIGNALDATA@{SIGNALDATA}!SIGNALDATA@{SIGNALDATA}}
+\subsubsection[{SIGNALDATA}]{\setlength{\rightskip}{0pt plus 5cm}SIGNALDATA::SIGNALDATA ()}}
+\label{class_s_i_g_n_a_l_d_a_t_a_363c71c74fc75874e1155c8872002ec7}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_s_i_g_n_a_l_d_a_t_a_ac54d48e555a7b8a7e12c927cc90f311}{
+\index{SIGNALDATA@{SIGNALDATA}!getRef@{getRef}}
+\index{getRef@{getRef}!SIGNALDATA@{SIGNALDATA}}
+\subsubsection[{getRef}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TRACESRI} SIGNALDATA::getRef (const std::vector$<$ unsigned $>$ \& {\em channels}, \/  std::vector$<$ unsigned $>$ \& {\em channelspruned})}}
+\label{class_s_i_g_n_a_l_d_a_t_a_ac54d48e555a7b8a7e12c927cc90f311}
+
+
+Returns a vector of pointer to the specified channels. If one channel does not exist, it is skipped from the return list. The function returns channelspruned, which is the channels effectively returned \hypertarget{class_s_i_g_n_a_l_d_a_t_a_ebd15e42c0384ffc5c4a74d317228145}{
+\index{SIGNALDATA@{SIGNALDATA}!getRef@{getRef}}
+\index{getRef@{getRef}!SIGNALDATA@{SIGNALDATA}}
+\subsubsection[{getRef}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TRACESRI} SIGNALDATA::getRef (const std::vector$<$ unsigned $>$ \& {\em channels})}}
+\label{class_s_i_g_n_a_l_d_a_t_a_ebd15e42c0384ffc5c4a74d317228145}
+
+
+Returns a vector of pointer to the specified channels. If one channel does not exist, a null pointer is returned for that channel \hypertarget{class_s_i_g_n_a_l_d_a_t_a_4b9e7478c234c6ced9b9a7d63c91c092}{
+\index{SIGNALDATA@{SIGNALDATA}!getRef@{getRef}}
+\index{getRef@{getRef}!SIGNALDATA@{SIGNALDATA}}
+\subsubsection[{getRef}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TRACERI} SIGNALDATA::getRef (unsigned {\em channel})}}
+\label{class_s_i_g_n_a_l_d_a_t_a_4b9e7478c234c6ced9b9a7d63c91c092}
+
+
+Returns a pointer to the channel. If the channel does not exist, return 0 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_s_i_g_n_a_l_d_a_t_a_02abe023620a84cd4cdee2f6b7e7e989}{
+\index{SIGNALDATA@{SIGNALDATA}!centersample@{centersample}}
+\index{centersample@{centersample}!SIGNALDATA@{SIGNALDATA}}
+\subsubsection[{centersample}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf SIGNALDATA::centersample}}}
+\label{class_s_i_g_n_a_l_d_a_t_a_02abe023620a84cd4cdee2f6b7e7e989}
+
+
+\hypertarget{class_s_i_g_n_a_l_d_a_t_a_3731f410a1aeed974914860ddd089eeb}{
+\index{SIGNALDATA@{SIGNALDATA}!data@{data}}
+\index{data@{data}!SIGNALDATA@{SIGNALDATA}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf TRACEI}$>$ {\bf SIGNALDATA::data}}}
+\label{class_s_i_g_n_a_l_d_a_t_a_3731f410a1aeed974914860ddd089eeb}
+
+
+\hypertarget{class_s_i_g_n_a_l_d_a_t_a_3e0058672e5c14f24c2502eb2c0b46f0}{
+\index{SIGNALDATA@{SIGNALDATA}!filename@{filename}}
+\index{filename@{filename}!SIGNALDATA@{SIGNALDATA}}
+\subsubsection[{filename}]{\setlength{\rightskip}{0pt plus 5cm}QString {\bf SIGNALDATA::filename}}}
+\label{class_s_i_g_n_a_l_d_a_t_a_3e0058672e5c14f24c2502eb2c0b46f0}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{data_8h}{data.h}\item 
+\hyperlink{data_8cpp}{data.cpp}\end{CompactItemize}
